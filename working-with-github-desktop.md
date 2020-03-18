@@ -6,11 +6,17 @@
 
 ## Innehållsförteckning
 
+* [Förord](#Förord)
 * [Förberedelser](#Förberedelser)
 * [Terminologi](#Terminologi)
 * [Skapa ett repository](#Skapa-ett-repository)
   - [Lägg till användare](#Lägg-till-användare)
 * [Arbeta lokalt med GitHub Desktop](#Arbeta-lokalt-med-GitHub-Desktop)
+  - [Klona ett repository](#Klona-ett-repository)
+  - [Arbetsvy](#Arbetsvy)
+  - [Historik](#Historik)
+
+## Förord
 
 ## Förberedelser
 
@@ -77,6 +83,8 @@ Nästa steg är nu att kunna börja arbeta lokalt och detta kommer ge med hjälp
 
 ![Github desktop: first glance](images/5-github-desktop-first-glance.png)
 
+### Klona ett repository
+
 Välj sedan att klona ett repository och börja med att logga in på ert GitHub konto, på så vis kommer ni få tillgång till alla era repositories.
 
 ![Github desktop: sign in](images/6-github-desktop-sign-in.png)
@@ -85,6 +93,8 @@ Därefter kommer ni i högerspalten se en lista över dessa **men** klicka istä
 
 ![Github desktop: clone](images/8-github-desktop-clone-repo.png)
 
+### Arbetsvy
+
 Nu kommer ni till den vy som ni kommer arbeta med.
 
 ![Github desktop: first use](images/9-github-desktop-first-use.png)
@@ -92,6 +102,8 @@ Nu kommer ni till den vy som ni kommer arbeta med.
 Om ni behöver ändra vilken textredigerare som ska gälla går ni in på *inställningar*.
 
 ![Github desktop: preferences](images/10-github-desktop-preferences.png)
+
+### Historik
 
 Nu kan ni välja att ta en titt på er historik för att se vad som skett.
 
