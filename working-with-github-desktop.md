@@ -152,6 +152,8 @@ I mitt fall hade jag öppnat Atom och **klistrat** in detta innehållet och seda
 
 ![Atom: gitignore](images/17-atom-add-gitignore-contents.png)
 
+**Om ni utgår från MonoGame kan ni** [använda denna .gitignore](https://raw.githubusercontent.com/CartBlanche/MonoGame-Samples/master/.gitignore).
+
 Direkt när jag gjort detta, det vill säga gjort en ändring jag sedan vill spara på GitHub, så öppnar vi GitHub Desktop igen.
 
 ![Github desktop: commit gitignore](images/18-github-desktop-update-gitignore.png)
