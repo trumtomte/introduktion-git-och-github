@@ -51,8 +51,12 @@ När ni har registrerat er och loggat in på [GitHub](https://github.com) kan ni
 3. Om ert repository ska vara publikt eller privat (**välj publikt**).
 4. Om ert repository ska skapas med en `README.md` (**checka i denna**).
 5. Om ert repository ska skapas med en `.gitignore`. **Välj** en av följande: Unity, VisualStudio, Java eller Python. Vi kommer redigera detta i ett senare skede.
-6. Om ert repository ska skapas med en licens (valfritt).
+6. Om ert repository ska skapas med en licens (valfritt).  
 
-    
+**Skapa ett nytt repository:**
 
-![Github create new repository](images/2-github-create-new-repo.png)
+![Github: create a new repository](images/2-github-create-new-repo.png)
+
+**Ert nya repository:**
+
+![Github: new repository](images/4-github-repo-initial-commit.png)
