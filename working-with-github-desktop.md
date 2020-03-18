@@ -26,6 +26,8 @@ Syftet med dessa textredigerare i denna guiden är huvudsakligen integrationen m
 Term          | Betydelse
 ------------- | -----------------
 Repository    | Ert projekt, dvs. alla era filer.
+`.gitignore`  | TODO
+`README.md`   | TODO
 Branch        | En version (gren) av ert projekt.
 Add           | TODO
 Commit        | Att spara en eller flera ändringar.
@@ -42,24 +44,24 @@ HEAD          | TODO
 
 ## Skapa ett repository
 
-När ni har registrerat er och loggat in på [GitHub][https://github.com] kan ni i huvudmenyn välja att skapa ett nytt repository (figur 1). På sidan för att skapa ett nytt repository har ni möjlighet att fylla i följande uppgifter (figur 2):
+När ni har registrerat er och loggat in på [GitHub](https://github.com) kan ni i huvudmenyn välja att skapa ett nytt repository (*figur 1*). På sidan för att skapa ett nytt repository har ni möjlighet att fylla i följande uppgifter (*figur 2*):
 
-1. **Namnet** på ert repository (undvik ÅÄÖ, skriv det i gemener och separera ord med ett bindestreck).
-2. **Beskrivning** (valfritt).
-3. **Synlighet** i form av publik eller privat (**välj publik**).
-4. Om ert repository ska skapas med en **README**, en textfil som beskriver ert projekt (**checka i denna**).
-5. Om ert repository ska skapas med en `.gitignore`, fil som styr filer som inte ska publiceras.
-  * Här kan ni till exempel söka på *Unity*, *Java*, *Python*, med mera (figur 3). **Välj** någon av dessa, vi kommer redigera denna i ett senare skede.
-6. Om ert repository ska skapas med en **licens** (valfritt).
+1. Namnet på ert repository.
+2. En kort beskrivning över ert projekt (valfritt).
+3. Om ert repository ska vara publikt eller privat (**välj publikt**).
+4. Om ert repository ska skapas med en `README.md` (**checka i denna**).
+5. Om ert repository ska skapas med en `.gitignore`.
+    * **Välj** en av följande: `Unity, VisualStudio, Java, Python` (*figur 3*). Vi kommer redigera detta i ett senare skede.
+6. Om ert repository ska skapas med en licens (valfritt).
 
 ![GitHub profile](images/1-github-profile.png)
 
-*Figur 1.*
+*1. Välj att skapa ett nytt repository*
 
 ![Github create new repository](images/2-github-create-new-repo.png)
 
-*Figur 2.*
+*2. Skapa ett nytt repository*
 
 ![Github choose a gitignore](images/3-github-choose-gitignore.png)
 
-*Figur 3.*
+*3. Sök på .gitignore*
