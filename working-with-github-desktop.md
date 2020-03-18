@@ -181,7 +181,7 @@ Låt oss nu säga att någon ser att någonting behövs läggas till i vår `.gi
 Kommentaren föreslår att vi ska även ignorera filer från Windows i vår `.gitignore`. Då går vi tillbaka till [gitignore.io](https://gitignore.io). Söker upp Windows och kopierar in detta innehåll i vår textredigare.
 
 ![Gitignore: search windows](images/gitignore-io-add-windows.png)
-![Gitignore: copy windows](images/gitignore-io-add-windows.png)
+![Gitignore: copy windows](images/gitignore-io-copy-windows.png)
 
 Därefter sparar våra ändringar (*commit*) och skickar dom till GitHub (*push*).
 
@@ -198,7 +198,7 @@ Nu känner vi oss redo med vår version och går därför vidare till att stoppa
 ![Github: merge pull request](images/26-github-merge-pull-request-2.png)
 ![Github: merge pull request complete](images/27-github-pull-request-4.png)
 
-Nu är vi ju färdiga med vår version, som var till för att skapa ändringar till `.gitignore`. Då kan vi radera den både lokalt och på GitHub. Detta gör vi enklast genom GitHub Desktop.
+Nu är vi ju färdiga med vår version, som var till för att skapa ändringar till `.gitignore`. Då kan vi radera den både lokalt och på GitHub. Detta gör vi enklast genom GitHub Desktop (i huvudmenyn hittar ni Branch -> Delete).
 
 ![Github desktop: delete branch](images/28-github-desktop-delete-branch.png)
 
@@ -208,6 +208,6 @@ Nästa steg är nu att hämta denna ändringen från GitHub (vår merge) till v�
 
 Nu kan vi se historiken från vår *branch* (version) även i **mastern**.
 
-[!Github desktop: new master branch history](images/30-github-desktop-history.png)
+![Github desktop: new master branch history](images/30-github-desktop-history.png)
 
 Nu har ni gått igenom den process som kan nyttjas för alla era ändringar, **dock** finns det fler metoder men denna är något som ingår i GitHubs egna förslag till att arbeta med Git och GitHub - [GitHub flow](https://guides.github.com/introduction/flow/).
