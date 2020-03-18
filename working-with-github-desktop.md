@@ -7,6 +7,9 @@
 ## Innehållsförteckning
 
 * [Förberedelser](#Förberedelser)
+* [Terminologi](#Terminologi)
+* [Skapa ett repository](#Skapa-ett-repository)
+  - [Lägg till användare](#Lägg-till-användare)
 
 ## Förberedelser
 
@@ -60,3 +63,9 @@ När ni har registrerat er och loggat in på [GitHub](https://github.com) kan ni
 **Ert nya repository:**
 
 ![Github: new repository](images/4-github-repo-initial-commit.png)
+
+### Lägg till användare
+
+Innan vi går vidare med att fylla på med innehåll i vårt repository ska vi börja med att lägga till fler användare (som vi sedan ska samarbeta med).
+
+![Github: invite collaborator](images/13-github-repo-settings.png)
