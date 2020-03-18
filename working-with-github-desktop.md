@@ -178,7 +178,7 @@ Låt oss nu säga att någon ser att någonting behövs läggas till i vår `.gi
 
 ![Github: pull request comment](images/22-github-pull-request-2.png)
 
-Kommentaren föreslår att vi ska även ignorera filer från Windows i vår `.gitignore`. Då går vi tillbaka till [gitignore.io](https://gitignore.io). Söker upp Windows och kopierar in detta innehåll i vår textredigare.
+Kommentaren föreslår att vi ska även ignorera filer från Windows i vår `.gitignore`. Då går vi tillbaka till [gitignore.io](https://gitignore.io). Söker upp Windows och kopierar in detta innehåll i vår textredigare, till exempel i slutet av vår `.gitignore`.
 
 ![Gitignore: search windows](images/gitignore-io-add-windows.png)
 ![Gitignore: copy windows](images/gitignore-io-copy-windows.png)
