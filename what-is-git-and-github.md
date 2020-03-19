@@ -1,6 +1,6 @@
 # Vad är Git och GitHub?
 
-> En kort översikt över Versionskontrollsystem (VCS), Git och GitHubs
+> En kort översikt över Versionskontrollsystem (VCS), Git och GitHub
 
 ## Versionskontrollsystem (VCS)
 
