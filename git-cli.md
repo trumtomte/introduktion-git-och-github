@@ -192,7 +192,7 @@ klicka sen på Enter
 
 #### För att slänga bort dina ändringar och avsluta vim.
 ``` bash
-$ :qa
+$ :qa 
 ```
 klicka sen på Enter
 
