@@ -270,4 +270,12 @@ Sen väljer vi att vi ska *merga* `update-project-description` till `master`.
 
 ### Individuella commits
 
+Ibland är det en bra idé att göra commits för antingen en fil eller flera filer samtidigt. Till exempel om vi lagt till alla våra filer för första gången eller om vi suttit en längre tid och arbetat på flera filer men känner oss färdiga med en och vill sedan spara just den.
+
+Nedan finner ni ett par skärmdumpar som demonstrerar några exempel.
+
+![Github desktop: separate commit 1](images/46-github-desktop-separate-commit-1.png)
+![Github desktop: separate commit 2](images/47-github-desktop-separate-commit-2.png)
+![Github desktop: separate commit 3](images/48-github-desktop-separate-commit-3.png)
+
 ## Tips och tricks
