@@ -172,3 +172,32 @@ $ git revert HEAD
 ``` bash
 $ git reset --hard a1e85r9d
 ```
+
+## Hur man lämnar Vim/Nano
+
+Ifall ni inte bytar eran default code-editor så kommer ni komma in i Vim eller Nano (beroende på operativ system) när ni får en merge conflict eller försöker köra 
+``` bash
+$ git commit --amend
+```
+
+Vim / Nano är by default en väldigt simpel code-editor (som man kan modifiera nästan precis allt med), den är dock inte så användarvänlig. Detta har skapat väldigt mycket memes kring hur man lämnar vim/nano (på tex /r/programmerhumor).
+
+### Så hur lämnar man vim/nano?
+
+#### Om du inte har ändrat någonting.
+``` bash
+$ :q
+```
+klicka sen på Enter
+
+#### För att slänga bort dina ändringar och avsluta vim.
+``` bash
+$ :qa
+```
+klicka sen på Enter
+
+#### För att spara dina ändringar och avsluta vim.
+``` bash
+$ :wq
+```
+klicka sen på Enter
