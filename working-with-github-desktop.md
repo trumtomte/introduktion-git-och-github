@@ -26,6 +26,8 @@
   - [Konflikter](#Konflikter)
   - [Individuella commits](#Individuella-commits)
 * [Tips och tricks](#Tips-och-tricks)
+  - [Emojis](#Emojis)
+  - [README](#README)
 
 ## Förord
 
@@ -270,9 +272,39 @@ Sen väljer vi att vi ska *merga* `update-project-description` till `master`.
 
 Konflikter i Git är vanligt förekommande och uppstår oftast när en person ändrar någonting i en fil på samma ställe som en annan. Konflikten uppstår när vi utför en *merge* från en *branch* till en annan. Till exempel låt oss säga att **person 1** skapar *branchen* `update-readme` och **person 2** skapar `readme-edits`, sedan gör **person 1** en *merge* till *master* - inga problem - men,  när **person 2** sedan gör en *merge* till *master* så upptäcker Git att ändringarna från **person 2** krockar med dom från **person 1** (till exempel kanske dom båda har ändrat ett par ord i samma rubrik) - då får vi en konflikt och Git kommer markera denna i den berörda filen. Därefter måste vi bestämma oss för vilken av ändringarna vi vill behålla, det vill säga den från **person 1** eller från **person 2**. Detta kan göras i valfri textredigerare men Atom löser detta genom att vi enkelt kan klicka på den ändring vi vill behålla och sedan fortsätta med vår *merge*.
 
-Det kan vara svårt att förstå hur detta fungerar genom att bara läsa så istället kommer jag demonstrera detta. I detta fallet kommer jag ha två stycken *branches* som båda ska göra ändringar till `README.md` på samma ställe och därmed kommer en konflikt uppstå.
+Det kan vara svårt att förstå hur detta fungerar genom att bara läsa så istället kommer jag demonstrera detta. I detta fallet kommer jag ha två stycken *branches* som båda ska göra ändringar till `README.md` som sedan ska *mergas* till *master*, men båda dessa *branches* gör ändringar på samma ställe vilket innebär att en konflikt kommer att uppstå.
 
+**Branch 1:** `update-working-with`,  ändringar och sedan en commit.
 
+![Atom: readme changes 1](images/49-atom-readme-changes-1.png)
+![Github desktop: readme commit 1](images/50-github-desktop-readme-changes-1.png)
+
+**Branch 2:** `update-readme`, ändringar och sedan en commit.
+
+![Atom: readme changes 2](images/51-atom-readme-changes-2.png)
+![Github desktop: readme commit 2](images/52-github-desktop-readme-changes-2.png)
+
+**Merge 1:** från `update-working-with` till `master` (inga konflikter).
+
+![Github desktop: readme merge 1](images/53-github-desktop-readme-merge-1.png)
+
+**Merge 2:** från `update-readme` till `master` - **en konflikt uppstår**.
+
+![Github desktop: readme merge 2](images/54-github-desktop-readme-merge-2.png)
+
+När vi går vidare (eftersom vi faktiskt vill *merga* våra ändringar till *mastern*) presenteras vi med följande:
+
+![Github desktop: readme conflict 1](images/55-github-desktop-readme-conflict-1.png)
+
+För att lösa denna konflikt så väljer jag att öppna Atom genom GitHub Desktop.
+
+![Atom: readme conflict 2](images/56-atom-readme-conflict-2.png)
+![Atom: readme conflict 3](images/57-atom-readme-conflict-3.png)
+
+När vi har löst vår konflikt (valt vilka ändringar att behålla), så går vi tillbaka till GitHub Desktop och väljer att *committa* vår *merge* och sedan *pushar* vi till GitHub.
+
+![Github desktop: readme conflict 4](images/58-github-desktop-readme-conflict-4.png)
+![Github desktop: readme conflict 5](images/59-github-desktop-readme-conflict-5.png)
 
 ### Individuella commits
 
@@ -285,3 +317,11 @@ Nedan finner ni ett par skärmdumpar som demonstrerar några exempel.
 ![Github desktop: separate commit 3](images/48-github-desktop-separate-commit-3.png)
 
 ## Tips och tricks
+
+### Emojis
+
+Ni kan i era markdownfiler, till exempel `README.md`, och i era *commit* meddelanden inkludera Emojis. Detta görs genom att ni skriver `:smiley:` för :smiley:. [Här hittar ni en referenslista för Emojis](https://gist.github.com/rxaviers/7360908).
+
+### README
+
+Att skriva en tydlig `README.md` är viktigt om ni arbetar med projekt med många deltagare eller om projektet är publikt. [Här hittar ni en bra grundläggande mall](https://github.com/dbader/readme-template) och [här är en sammanställning över bra skrivna READMEs](https://github.com/matiassingers/awesome-readme).
