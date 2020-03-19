@@ -1,5 +1,7 @@
 # Git i terminalen
 
+[Här hittar ni en väldigt utförlig lista över bra Git tips.](https://github.com/git-tips/tips)
+
 ## Init och Clone
 
 Starta ett nytt git repository i den nuvarande mappen:
