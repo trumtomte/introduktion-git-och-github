@@ -324,4 +324,4 @@ Ni kan i era markdownfiler, till exempel `README.md`, och i era *commit* meddela
 
 ### README
 
-Att skriva en tydlig `README.md` är viktigt om ni arbetar med projekt med många deltagare eller om projektet är publikt. [Här hittar ni en bra grundläggande mall](https://github.com/dbader/readme-template) och [här är en sammanställning över bra skrivna READMEs](https://github.com/matiassingers/awesome-readme).
+Att skriva en tydlig `README.md` är viktigt om ni arbetar i ett projekt med många deltagare eller om projektet är publikt. [Här hittar ni en bra grundläggande mall](https://github.com/dbader/readme-template) och [här är en sammanställning över bra skrivna READMEs](https://github.com/matiassingers/awesome-readme).
