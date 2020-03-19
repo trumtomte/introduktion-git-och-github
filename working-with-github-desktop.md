@@ -24,6 +24,7 @@
   - [Merge](#Merge)
 * [Vanliga situationer](#Vanliga-situationer)
   - [Konflikter](#Konflikter)
+  - [Individuella commits](#Individuella-commits)
 * [Tips och tricks](#Tips-och-tricks)
 
 ## Förord
@@ -247,7 +248,7 @@ Därefter börjar jag göra mina ändringar.
 
 ![Atom: readme changes](images/34-atom-update-readme.png)
 
-Sedan gör vi en *commit* av dessa ändringar och därefter publicerar vi detta ("Publish branch").
+Sedan gör vi en *commit* av dessa ändringar och därefter publicerar vi detta ("Publish branch" eller "Push origin").
 
 ![Github desktop: commit readme](images/35-github-desktop-commit-project-description.png)
 
@@ -266,5 +267,7 @@ Sen väljer vi att vi ska *merga* `update-project-description` till `master`.
 ## Vanliga situationer
 
 ### Konflikter
+
+### Individuella commits
 
 ## Tips och tricks
