@@ -268,6 +268,12 @@ Sen väljer vi att vi ska *merga* `update-project-description` till `master`.
 
 ### Konflikter
 
+Konflikter i Git är vanligt förekommande och uppstår oftast när en person ändrar någonting i en fil på samma ställe som en annan. Konflikten uppstår när vi utför en *merge* från en *branch* till en annan. Till exempel låt oss säga att **person 1** skapar *branchen* `update-readme` och **person 2** skapar `readme-edits`, sedan gör **person 1** en *merge* till *master* - inga problem - men,  när **person 2** sedan gör en *merge* till *master* så upptäcker Git att ändringarna från **person 2** krockar med dom från **person 1** (till exempel kanske dom båda har ändrat ett par ord i samma rubrik) - då får vi en konflikt och Git kommer markera denna i den berörda filen. Därefter måste vi bestämma oss för vilken av ändringarna vi vill behålla, det vill säga den från **person 1** eller från **person 2**. Detta kan göras i valfri textredigerare men Atom löser detta genom att vi enkelt kan klicka på den ändring vi vill behålla och sedan fortsätta med vår *merge*.
+
+Det kan vara svårt att förstå hur detta fungerar genom att bara läsa så istället kommer jag demonstrera detta. I detta fallet kommer jag ha två stycken *branches* som båda ska göra ändringar till `README.md` på samma ställe och därmed kommer en konflikt uppstå.
+
+
+
 ### Individuella commits
 
 Ibland är det en bra idé att göra commits för antingen en fil eller flera filer samtidigt. Till exempel om vi lagt till alla våra filer för första gången eller om vi suttit en längre tid och arbetat på flera filer men känner oss färdiga med en och vill sedan spara just den.
