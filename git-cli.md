@@ -184,7 +184,7 @@ Vim / Nano är by default en väldigt simpel code-editor (som man kan modifiera 
 
 ### Så hur lämnar man vim/nano?
 
-#### Om du inte har ändrat någonting.
+#### Om du inte har ändrat någonting i vim.
 ``` bash
 $ :q
 ```
@@ -201,3 +201,11 @@ klicka sen på Enter
 $ :wq
 ```
 klicka sen på Enter
+
+#### Om du inte ändrat någonting i Nano / Vill slänga bort dina ändringar
+
+CTRL+X sen N
+
+#### För att spara dina ändringar i Nano och avsluta
+
+CTRL+X sen Y
