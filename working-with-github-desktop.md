@@ -24,6 +24,7 @@
   - [Merge](#Merge)
 * [Vanliga situationer](#Vanliga-situationer)
   - [Konflikter](#Konflikter)
+  - [Att lösa en konflikt utan Atom](#Att-lösa-en-konflikt-utan-Atom)
   - [Individuella commits](#Individuella-commits)
 * [Tips och tricks](#Tips-och-tricks)
   - [Emojis](#Emojis)
@@ -305,6 +306,30 @@ När vi har löst vår konflikt (valt vilka ändringar att behålla), så går v
 
 ![Github desktop: readme conflict 4](images/58-github-desktop-readme-conflict-4.png)
 ![Github desktop: readme conflict 5](images/59-github-desktop-readme-conflict-5.png)
+
+### Att lösa en konflikt utan Atom
+
+Att lösa en konflikt utan Atom innebär bara mer handpåläggning, att istället för att klicka på "Use me" som i skärmdumparna ovan så kommer ni själva behöva radera den del av konflikten (det är alltid två delar) som ni inte vill ha kvar. Låt oss säga att vi får en konflikt där två personer har namnget en rubrik på varsitt vis. Vår nuvarande *branch* kommer vara `HEAD` och den andres ändringar kommer från *branchen* `update-header`, då hade vi kunnat få något likt:
+
+```
+<<<<<<< HEAD
+
+## Översikt
+
+=======
+
+## Innehållsförteckning
+
+>>>>>>> update-header
+```
+
+Här kan vi se de nuvarande ändringarna (dvs. `## Översikt`) mot den andres (dvs. `## Innehållsförteckning`). Om jag nu vill använda mig av den andres ändringar får jag själv radera det som Git har lagt till.
+
+```
+## Innehållsförteckning
+```
+
+Så - för att lösa denna konflikten manuellt fick jag radera delvis den övre rubriken (`## Översikt`) men även det som märkte upp konflikten: `<<<<<<< HEAD`, `=======`, `>>>>>>> update-header`. Därefter kan jag enkelt göra en *commit* igen och sedan fortsätta med min *merge*.
 
 ### Individuella commits
 
