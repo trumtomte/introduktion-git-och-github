@@ -1,6 +1,8 @@
 # Övningsinstruktioner
 
-Ni ska i denna Git-laboration (baserat på materialet i detta repository) göra följande:
+Inför denna laboration kan ni välja att antingen använda er av [GitHub Desktop](working-with-github-desktop.md) eller arbeta med [Git i terminalen](git-cli.md). Jag kan rekommendera att börja kolla på GitHub Desktop om ni är ovana, även om bara för att läsa om arbetsprocessen innan ni tar steget till terminalen.
+
+Ni ska efter laborationen ha utfört punkterna nedan inför vårat Zoommöte, där vi sedan kan diskutera hur det har gått och lösa eventuella problem.
 
 1. Skapa ett repository för ert projekt (**en** person gör detta).
 2. Bjuda in samtliga projektmedlemmar till ert repository.
