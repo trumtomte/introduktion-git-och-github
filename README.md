@@ -4,6 +4,7 @@
 
 ## Översikt
 
+* [Övningsinstruktioner](#exercise-instructions.md)
 * [Vad är Git och GitHub?](what-is-git-and-github.md)
 * [Arbeta med GitHub Desktop](working-with-github-desktop.md)
 * [Terminalen](cli.md)
