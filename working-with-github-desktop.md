@@ -32,8 +32,6 @@
 
 ## Förord
 
-*Detta är för stunden ett levande dokument som uppdateras allt eftersom.*
-
 Det rekommenderas att följa denna guide från start till slut för att få en bra helhet till hur ni kan arbeta med GitHub Desktop (Git och GitHub). När ni väl gått igenom denna guide kan ni ta beslut om vilken arbetsprocess som lämpar sig bäst för ert projekt.
 
 Det finns en del skärmdumpar som inte används i denna guiden som eventuellt kan vara till nytta, dessa hittar ni i mappen `images` i detta repository.
