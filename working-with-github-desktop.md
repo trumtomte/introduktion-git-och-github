@@ -172,14 +172,14 @@ Eftersom vi nu ska börja arbeta med vårt repository så ska vi skapa vår för
 *branch* (en version av vårt repository). Detta gör vi för att vi ska kunna
 arbeta flera stycken parallellt, det vill säga alla har varsin version
 (*branch*) av samma kodbas och på så vis kan alla arbeta lokalt. Det finns
-däremot en *branch* som alltid finns kvar och det är `master` - denna är
+däremot en *branch* som alltid finns kvar och det är `main` - denna är
 kärnan för hela ert repository.
 
 När vi arbetat klart med vår *branch*, i detta fallet med `.gitignore`, kommer
-vi att stoppa in våra ändringar i **master branchen**, detta är vad som kallas
-att göra en *merge*. Anledningen till detta är för att när vi färdigställt vårt
-arbete vill vi att de andra i projektet ska kunna hämta dessa *commits* och
-fortsätta arbeta.
+vi att stoppa in våra ändringar i `main`, detta är vad som kallas att göra en
+*merge*. Anledningen till detta är för att när vi färdigställt vårt arbete vill
+vi att de andra i projektet ska kunna hämta dessa *commits* och fortsätta
+arbeta.
 
 ### Skapa en branch
 
@@ -226,9 +226,9 @@ innehållet i `.gitignore`, väljer vi "Publish branch".
 
 Nu ska vår version och ändringar finnas på GitHub. Nu kan vi antingen fortsätta
 att arbeta eller, om vi känner oss färdiga med denna versionen, stoppa in våra
-ändringar i `master` (det vill säga en *merge*). Ett vanligt arbetssätt för
+ändringar i `main` (det vill säga en *merge*). Ett vanligt arbetssätt för
 detta är att skapa en så kallad *pull request*, vilket kort kan beskrivas som
-att vår version är redo för att granskas innan den *mergas* till `master`.
+att vår version är redo för att granskas innan den *mergas* till `main`.
 
 ### Pull request
 
@@ -268,7 +268,7 @@ dykt upp.
 ![Github: pull request update](images/24-github-pull-request-3.png)
 
 Nu känner vi oss redo med vår version och går därför vidare till att stoppa in
-vår version (*merge*) till vår `master`.
+vår version (*merge*) till vår `main`.
 
 ![Github: merge pull request](images/26-github-merge-pull-request-2.png)
 ![Github: merge pull request complete](images/27-github-pull-request-4.png)
@@ -281,13 +281,13 @@ Detta gör vi enklast genom GitHub Desktop, i huvudmenyn hittar ni "Branch" ->
 ![Github desktop: delete branch](images/28-github-desktop-delete-branch.png)
 
 Nästa steg är nu att hämta denna ändringen från GitHub (vår tidigare *merge*)
-till vår lokala `master`.
+till vår lokala `main`.
 
-![Github desktop: fetch and pull to master](images/29-github-desktop-pull-origin-master.png)
+![Github desktop: fetch and pull to main](images/29-github-desktop-pull-origin-master.png)
 
-Nu kan vi se historiken från vår *branch* (version) även i vår `master`.
+Nu kan vi se historiken från vår *branch* (version) även i vår `main`.
 
-![Github desktop: new master branch history](images/30-github-desktop-history.png)
+![Github desktop: new main branch history](images/30-github-desktop-history.png)
 
 #### GitHub flow
 
@@ -297,14 +297,14 @@ förslag till att arbeta med Git och GitHub - [GitHub flow][flow].
 
 Kärnan för denna metod är att varje gång ni vill göra ändringar skapar ni en
 *branch*, gör de *commits* som behövs, sedan skapar ni en *pull request* och
-slutligen om allting ser bra ut så gör ni en *merge* till er `master`.
+slutligen om allting ser bra ut så gör ni en *merge* till er `main`.
 
 ![GitHub flow](images/github-flow.png)
 
 ### Merge
 
 Ett alternativ till arbetsprocessen *GitHub flow* är att istället för att skapa
-en *pull request* så bestämmer vi oss för att göra en *merge* till vår `master`
+en *pull request* så bestämmer vi oss för att göra en *merge* till vår `main`
 direkt (**utan att någon granskar vår kod**). Detta har både för- och nackdelar.
 En fördel med detta är att processen blir snabbare och nackdelen att det ökar
 risken för att någonting blir fel eftersom att ingen kommer granska vår kod.
@@ -336,13 +336,13 @@ Vi kan nu kontrollera att våra ändringar kommit upp till GitHub.
 
 Nu är nästa steg att utföra vår *merge*. När vi gör en *merge* måste vi byta
 *branch* (dvs. en *checkout*) till **den branch vi vill merga till**, i vårt
-fall är detta vår `master`.
+fall är detta vår `main`.
 
-![Github desktop: switch to master](images/38-github-desktop-switch-to-master.png)
+![Github desktop: switch to main](images/38-github-desktop-switch-to-master.png)
 
-Sen väljer vi att vi ska *merga* `update-project-description` till `master`.
+Sen väljer vi att vi ska *merga* `update-project-description` till `main`.
 
-![Github desktop: merge to master](images/39-github-desktop-merge-into-master.png)
+![Github desktop: merge to main](images/39-github-desktop-merge-into-master.png)
 
 ## Vanliga situationer
 
@@ -352,8 +352,8 @@ Konflikter i Git är vanligt förekommande och uppstår oftast när en person ä
 någonting i en fil på samma ställe som en annan. Konflikten uppstår när vi utför
 en *merge* från en *branch* till en annan. Till exempel låt oss säga att Lisa
 skapar *branchen* `update-readme` och Petter skapar `readme-edits`, sedan gör
-Lisa en *merge* till `master`, inga problem. Men när Petter sedan gör en *merge*
-till `master` så upptäcker Git att ändringarna från Lisa krockar med dom från
+Lisa en *merge* till `main`, inga problem. Men när Petter sedan gör en *merge*
+till `main` så upptäcker Git att ändringarna från Lisa krockar med dom från
 Petter (till exempel kanske dom båda har ändrat ett par ord i samma rubrik), då
 får vi en konflikt och Git kommer markera detta i den berörda filen. Därefter
 måste vi bestämma oss för vilken av ändringarna vi vill behålla, det vill säga
@@ -364,7 +364,7 @@ sedan fortsätta med vår *merge*.
 Det kan vara svårt att förstå hur detta fungerar genom att bara läsa så istället
 kommer jag demonstrera detta. I detta fallet kommer jag ha två stycken
 *branches* som båda ska göra ändringar till filen `README.md` som sedan ska
-*mergas* till min `master`, men båda dessa *branches* gör ändringar på samma
+*mergas* till min `main`, men båda dessa *branches* gör ändringar på samma
 ställe vilket innebär att en konflikt kommer att uppstå.
 
 **Branch 1:** `update-working-with`,  ändringar och sedan en commit.
@@ -377,16 +377,16 @@ ställe vilket innebär att en konflikt kommer att uppstå.
 ![Atom: readme changes 2](images/51-atom-readme-changes-2.png)
 ![Github desktop: readme commit 2](images/52-github-desktop-readme-changes-2.png)
 
-**Merge 1:** från `update-working-with` till `master` (inga konflikter).
+**Merge 1:** från `update-working-with` till `main` (inga konflikter).
 
 ![Github desktop: readme merge 1](images/53-github-desktop-readme-merge-1.png)
 
-**Merge 2:** från `update-readme` till `master` (**en konflikt uppstår**).
+**Merge 2:** från `update-readme` till `main` (**en konflikt uppstår**).
 
 ![Github desktop: readme merge 2](images/54-github-desktop-readme-merge-2.png)
 
 När vi går vidare (eftersom vi faktiskt vill *merga* våra ändringar till
-vår `master`) presenteras vi med följande:
+vår `main`) presenteras vi med följande:
 
 ![Github desktop: readme conflict 1](images/55-github-desktop-readme-conflict-1.png)
 

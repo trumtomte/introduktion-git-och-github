@@ -16,7 +16,7 @@ hur det har gått och lösa eventuella problem ni stött på.
 5. Samtliga projektmedlemmar **ska** sedan:
     * skapa en *branch*, så ändringar kan göras (vad ni gör för ändringar är upp till er själva).
     * göra en *commit* med sina ändringar till sin *branch*.
-    * göra en *merge* från sin *branch* till *mastern*.
+    * göra en *merge* från sin *branch* till `main`.
     * radera den *branch* ni precis gjort.
 6. Uppdatera er `README.md` med er projektbeskrivning. Detta **ska** göras genom en *pull request* på GitHub.
     * De andra projektmedlemmarna ska se över ändringarna och skriva en kort kommentar på denna *pull request* (det räcker med ett ord eller en smiley).
