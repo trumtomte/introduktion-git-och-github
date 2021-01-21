@@ -5,12 +5,12 @@
 ## Översikt
 
 * [Övningsinstruktioner](exercise-instructions.md)
-* [Vad är Git och GitHub?](what-is-git-and-github.md)
+* [Vad är Git och GitHub?](what-are-git-and-github.md)
 * [Arbeta med GitHub Desktop](working-with-github-desktop.md)
-* [Terminalen](cli.md)
-* [Git i terminalen](git-cli.md)
+* [Terminalen](the-terminal.md)
+* [Terminalen och Git](the-terminal-and-git.md)
 
-## Resurser
+## Rekommenderad läsning
 
 En samling av resurser från både avsnitten ovan och webben.
 

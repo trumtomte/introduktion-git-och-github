@@ -1,6 +1,6 @@
 # Arbeta med GitHub Desktop
 
-> En guide för att arbeta med [GitHub Desktop](https://desktop.github.com).
+> En guide för att arbeta med [GitHub Desktop][desktop].
 
 ![GitHub Desktop](images/github-desktop-landing-page.png)
 
@@ -32,22 +32,28 @@
 
 ## Förord
 
-Det rekommenderas att följa denna guide från start till slut för att få en bra helhet till hur ni kan arbeta med GitHub Desktop (Git och GitHub). När ni väl gått igenom denna guide kan ni ta beslut om vilken arbetsprocess som lämpar sig bäst för ert projekt.
+Det rekommenderas att följa denna guide från start till slut för att få en bra
+helhet till hur ni kan arbeta med GitHub Desktop (Git och GitHub). När ni har
+gått igenom denna guide kan ni ta beslut om vilken arbetsprocess som lämpar sig
+bäst för ert projekt.
 
-Det finns en del skärmdumpar som inte används i denna guiden som eventuellt kan vara till nytta, dessa hittar ni i mappen `images` i detta repository.
+Det finns en hel del skärmdumpar som inte används i denna guiden som eventuellt
+kan vara till nytta, dessa hittar ni i mappen [images][images] i detta
+repository.
 
 ## Förberedelser
 
-Till att börja med måste ni [registrera er på GitHub](https://github.com/join).
+Till att börja med måste ni [registrera er på GitHub][join]. Sedan behöver ni
+installera [GitHub Desktop][desktop].
 
-För att följa med i denna guiden krävs det att ni installerar:
+I denna guiden används textredigeraren [Atom][atom] för att den har en enkel
+integration med både Git och GitHub. Det finns så klart många bra alternativ
+till denna som [Visual Studio Code][vsc]. Många textredigerare och IDE:er (t.ex.
+IntelliJ, Eclipse, m.m.) har antingen inbyggt stöd eller plugins som kan
+integrera med Git och GitHub.
 
-* [GitHub Desktop](https://desktop.github.com) (versionshantering)
-* [Atom](https://atom.io) (textredigerare)
-
-Det finns givetvis fler alternativ till textredigerare men i denna guiden används [Atom](https://atom.io) då den har bra integration med både Git och GitHub. Ett alternativ är [Visual Studio Code](https://code.visualstudio.com) som har likvärdigt stöd för Git och GitHub.
-
-Syftet med dessa textredigerare i denna guiden är huvudsakligen integrationen med Git och GitHub, till exempel hur dessa underlättar hantering av *merge konflikter*, inte att dom nödvändigtvis måste användas till programmering.
+Syftet med [Atom][atom] i denna guide är att den enkelt hanterar *merge
+conflicts* (mer om detta senare), den används alltså inte till programmering. 
 
 ## Terminologi
 
@@ -57,7 +63,8 @@ Term           | Betydelse
 -------------- | -----------------
 Repository     | Ert projekt, dvs. alla era filer.
 `.gitignore`   | Innehåller sökvägar till filer som **inte** ska publiceras till GitHub.
-`README.md`    | Det innehåll som visas när någon besöker projektsidan på GitHub. Formateras enligt [Markdown](https://guides.github.com/features/mastering-markdown/).
+`README.md`    | Det innehåll som visas när någon besöker projektsidan på GitHub. Formateras enligt [Markdown][md].
+Add            | Lägg till de filer och mappar som redigerats för att sedan spara dom (*commit*).
 Commit         | Att spara en eller flera ändringar med ett beskrivande meddelande.
 Branch         | En version av ert projekt. Ni skapar en *branch* varje gång någon vill göra ändringar (*commits*).
 Merge          | Sammanställ *commits* från en *branch* till en annan.
@@ -71,17 +78,22 @@ Merge conflict | När en *merge* från en *branch* till en annan har filändring
 
 ## Skapa ett repository
 
-:exclamation: Bara **en** person per projekt kommer skapa ert repository, ni andra kommer [klona detta repository](#Klona-ett-repository).
+:exclamation: Bara **en** person per projekt kommer skapa ert repository, ni
+andra kommer [klona detta repository](#Klona-ett-repository).
 
-När ni har registrerat er och loggat in på [GitHub](https://github.com) kan ni i huvudmenyn välja att skapa ett nytt repository. På sidan för att skapa ett nytt repository har ni sedan möjlighet att fylla i följande uppgifter:
+När ni har registrerat er och loggat in på [GitHub][gh] kan ni i huvudmenyn
+välja att skapa ett nytt repository. På sidan för att skapa ett nytt repository
+har ni sedan möjlighet att fylla i följande uppgifter:
 
 1. Namnet på ert repository.
 2. En kort beskrivning över ert projekt (valfritt).
 3. Om ert repository ska vara publikt eller privat (**välj publikt**).
 4. Om ert repository ska skapas med en `README.md` (**checka i denna**).
 5. Om ert repository ska skapas med en `.gitignore`.
-    * **Välj en** av följande: *Unity*, *VisualStudio*, *Java* eller *Python*. Vi kommer redigera detta i ett senare skede.
-6. Om ert repository ska skapas med en licens (valfritt).  
+    * **Välj en**<sup>1</sup>, till exempel: *Unity*, *VisualStudio*, *Java* eller *Python*.
+6. Om ert repository ska skapas med en licens (valfritt).
+
+<sup>1</sup>Vi kommer redigera detta i ett senare skede.
 
 **Skapa ett nytt repository:**
 
@@ -93,53 +105,81 @@ När ni har registrerat er och loggat in på [GitHub](https://github.com) kan ni
 
 ### Lägg till användare
 
-Innan vi går vidare med att skapa mer innehåll i vårt repository så ska vi börja med att lägga till fler användare. Så att vi har möjlighet att börja samarbeta.
+Innan vi går vidare med att skapa mer innehåll i vårt repository så ska vi börja
+med att lägga till fler användare. Så att vi har möjlighet att börja samarbeta.
 
 ![Github: invite collaborator](images/13-github-repo-settings.png)
 
 ## Arbeta lokalt med GitHub Desktop
 
-Nästa steg är nu att kunna börja arbeta lokalt och detta kommer ske med hjälp av [GitHub Desktop](https://desktop.github.com). Första gången ni öppnar denna applikationen presenteras ni med följande:
+Nästa steg är nu att kunna börja arbeta lokalt och detta kommer ske med hjälp av
+[GitHub Desktop][desktop]. Första gången ni öppnar denna applikationen
+presenteras ni med följande:
 
 ![Github desktop: first glance](images/5-github-desktop-first-glance.png)
 
 ### Klona ett repository
 
-Efter ni startat applikationen första gången ska ni sedan hämta ert repository från GitHub, detta kallas att *klona* ett repository. För att göra detta klickar ni på "Clone a Repository [...]" och där ni kan ni sedan välja att logga in med ert GitHub konto, då får ni tillgång till alla repositories ni har.
+Efter ni startat applikationen första gången ska ni sedan hämta ert repository
+från GitHub, detta kallas för att *klona* ett repository. För att göra detta
+klickar ni på "Clone a Repository [...]" och där ni kan ni sedan välja att logga
+in med ert GitHub-konto (då får ni tillgång till alla repositories ni har).
 
 ![Github desktop: sign in](images/6-github-desktop-sign-in.png)
 
-Därefter kommer ni i högerspalten se en lista över dessa **men** klicka istället på klona *igen* så ni kan välja till vilken mapp ni vill ha ert projekt i.
+Därefter kommer ni i högerspalten se en lista över dessa **men** klicka istället
+på klona igen så ni kan välja till vilken mapp ni vill ha ert projekt i.
 
-*Vi kommer att fortsätta göra ändringar i detta repository innan ni går vidare med att lägga till alla era egna filer och kan börja arbeta på riktigt.*
+:exclamation: Vi kommer att fortsätta göra ändringar i detta repository **innan
+ni går vidare** med att lägga till alla era egna filer och kan börja arbeta på
+riktigt.
 
 ![Github desktop: clone](images/8-github-desktop-clone-repo.png)
 
 ### Arbetsvy
 
-När ni klonat ert första repository kommer ni till *arbetsvyn* och det är denna som ni sedan huvudsakligen kommer arbeta med. Denna är indelad i två sidor, till vänster hittar ni de filer ni gjort ändringar till och till höger hittar ni vilka ändringar som gjorts (baserat på den fil ni markerat i vänstersidan).
+När ni klonat ert första repository kommer ni till *arbetsvyn* och det är denna
+som ni sedan huvudsakligen kommer arbeta med. Denna är indelad i två sektioner,
+till vänster hittar ni de filer ni gjort ändringar i och till höger hittar ni
+vilka ändringar som gjorts (baserat på den fil ni markerat i vänsterspalten).
 
 ![Github desktop: first use](images/9-github-desktop-first-use.png)
 
-Om ni behöver ändra vilken textredigerare som ska gälla går ni in på *inställningar*.
-
-Ni kan under *Preferences* -> *Integrations* sedan välja att byta textredigerare (t.ex. som i mitt fall, till Atom).
+Om ni behöver ändra vilken textredigerare som ska gälla går ni in under
+inställningar. Välj "Preferences" -> "Integrations" och sedan kan ni byta
+textredigerare (t.ex. som i mitt fall, till Atom).
 
 ![Github desktop: preferences](images/10-github-desktop-preferences.png)
 
 ### Historik
 
-I vänsterspalten kan vi välja *History* istället för *Changes* vilket ger oss *historikvyn* som helt enkelt visar all historik över ändringar.
+I vänsterspalten kan vi välja *History* istället för *Changes* vilket ger oss
+*historikvyn* som helt enkelt visar all historik över ändringar som gjorts.
 
 ![Github desktop: history](images/15-github-desktop-history.png)
 
 ## Göra ändringar
 
-Nu när vi är igång ska vi göra vår första ändring (*commit*) och skicka denna till GitHub (*push*). Det första vi ska göra är att se till att vår `.gitignore` är i ordning, skulle vi inte göra detta så kommer alla filer vi lägger till i vårt repository att skickas till GitHub. Vissa filer vill vi endast ska finnas lokalt och behövs inte finnas centralt på GitHub, till exempel kanske vi har en fil med lösenord eller så kan det vara så att vår textredigerare skapar temporära filer som inte heller ska finnas på GitHub.
+Nu när vi är igång ska vi göra vår första ändring (*commit*) och skicka denna
+till GitHub (*push*). Det första vi ska göra är att se till att vår `.gitignore`
+är i ordning, skulle vi inte göra detta så kommer alla filer vi lägger till i
+vårt repository att skickas till GitHub. Vissa filer vill vi endast ska finnas
+lokalt och behövs inte finnas centralt på GitHub, till exempel kanske vi har en
+fil med lösenord eller så kan det vara så att vår textredigerare skapar
+temporära filer som inte heller ska finnas på GitHub.
 
-Eftersom vi nu ska börja arbeta med vårt repository så ska vi skapa vår första *branch* (en version av vårt repository). Detta gör vi för att vi ska kunna arbeta flera stycken parallellt, det vill säga alla har varsin version (*branch*) av samma kodbas och på så vis kan alla arbeta lokalt. Det finns däremot en *branch* som alltid finns kvar och det är **master** - denna är kärnan för hela ert repository.
+Eftersom vi nu ska börja arbeta med vårt repository så ska vi skapa vår första
+*branch* (en version av vårt repository). Detta gör vi för att vi ska kunna
+arbeta flera stycken parallellt, det vill säga alla har varsin version
+(*branch*) av samma kodbas och på så vis kan alla arbeta lokalt. Det finns
+däremot en *branch* som alltid finns kvar och det är `master` - denna är
+kärnan för hela ert repository.
 
-När vi arbetat klart med vår *branch*, i detta fallet med `.gitignore`, kommer vi att stoppa in våra ändringar i **master branchen**, detta är vad som kalls att göra en *merge*. Anledningen till detta är för att när vi färdigställt vårt arbete vill vi de andra i projektet ska kunna hämta dessa *commits* och fortsätta arbeta.
+När vi arbetat klart med vår *branch*, i detta fallet med `.gitignore`, kommer
+vi att stoppa in våra ändringar i **master branchen**, detta är vad som kallas
+att göra en *merge*. Anledningen till detta är för att när vi färdigställt vårt
+arbete vill vi att de andra i projektet ska kunna hämta dessa *commits* och
+fortsätta arbeta.
 
 ### Skapa en branch
 
@@ -149,49 +189,69 @@ Vi börjar med att skapa en ny *branch*, som vi kan döpa till `update-gitignore
 
 ### Updatera .gitignore
 
-Nu ska vi ersätta det innehåll som förvaldes i vår `.gitignore` när vi skapade vårt repository. Det första steget är att bestämma oss för vad som ska ignoreras, lyckligtvis så finns tjänsten [gitignore.io](https://gitignore.io) för detta. När ni söker så tänk på vilket operativsystem ni har, vilken textredigerare, vilket programmeringsspråk och eventuella bibliotek eller ramverk.
+Nu ska vi ersätta det innehåll som förvaldes i vår `.gitignore` när vi skapade
+vårt repository. Det första steget är att bestämma oss för vad som ska
+ignoreras, lyckligtvis så finns tjänsten [gitignore.io][gitignore] för detta.
+När ni söker så tänk på vilket operativsystem ni har, vilken textredigerare,
+vilket programmeringsspråk och eventuella bibliotek eller ramverk.
 
 Ett webbrelaterat projekt hade kunnat söka på följande:
 
 ![Gitignore: search](images/gitignore-io-search.png)
 
-Därefter skickas ni till en sida innehållande den text som ska placeras i `.gitignore`, **kopiera denna**.
+Därefter skickas ni till en sida innehållande den text som ska placeras i
+`.gitignore`, **kopiera all text**.
 
 ![Gitignore: copy](images/gitignore-io-copy.png)
 
-:exclamation: **Om ni utgår från MonoGame kan ni** [använda denna .gitignore](https://raw.githubusercontent.com/CartBlanche/MonoGame-Samples/master/.gitignore).
+:exclamation: **Om ni utgår från MonoGame kan ni** [använda denna
+.gitignore][monogame].
 
-I mitt fall hade jag öppnat min textredigerare Atom och **klistrat** in detta innehållet och sedan **sparat** filen:
+I mitt fall hade jag öppnat min textredigerare Atom och **klistrat** in detta
+innehållet och sedan **sparat** filen:
 
 ![Atom: gitignore](images/17-atom-add-gitignore-contents.png)
 
-Direkt när jag gjort detta, det vill säga gjort en ändring jag sedan vill spara på GitHub, så öppnar vi GitHub Desktop igen.
+Direkt när jag gjort detta, det vill säga gjort en ändring jag sedan vill spara
+på GitHub, så öppnar vi GitHub Desktop igen.
 
 ![Github desktop: commit gitignore](images/18-github-desktop-update-gitignore.png)
 
 ### Publicera ändringar
 
-För att spara våra ändringar (*push*), det vill säga vår *branch* och det nya innehållet i `.gitignore`, väljer vi "Publish branch".
+För att spara våra ändringar (*push*), det vill säga vår *branch* och det nya
+innehållet i `.gitignore`, väljer vi "Publish branch".
 
 ![Github desktop: publish branch](images/19-github-desktop-publish-and-create-pull-request.png)
 
-Nu ska vår version och ändringar finnas på GitHub. Nu kan vi antingen fortsätta att arbeta eller, om vi känner oss färdiga med denna versionen, stoppa in våra ändringar i **master** (det vill säga en *merge*). Ett vanligt arbetssätt för detta är att skapa en så kallad **pull request**, vilket kort kan beskrivas som att vår version är redo för att granskas innan den *mergas* till **mastern**.
+Nu ska vår version och ändringar finnas på GitHub. Nu kan vi antingen fortsätta
+att arbeta eller, om vi känner oss färdiga med denna versionen, stoppa in våra
+ändringar i `master` (det vill säga en *merge*). Ett vanligt arbetssätt för
+detta är att skapa en så kallad *pull request*, vilket kort kan beskrivas som
+att vår version är redo för att granskas innan den *mergas* till `master`.
 
 ### Pull request
 
-För att göra en **pull request** kan ni klicka på "Create Pull Request" där det tidigare stod "Publish branch". Ni kommer därefter skickas till en webbläsare som öppnar följande sida:
+För att göra en *pull request* kan ni klicka på "Create Pull Request" där det
+tidigare stod "Publish branch". Ni kommer därefter skickas till en webbläsare
+som öppnar följande sida:
 
 ![Github: create pull request](images/20-github-open-a-pull-request.png)
 
-Därefter inväntar ni att andra granskar och ger feedback. **Klicka inte Merge pull request ännu.**
+Därefter inväntar ni att andra granskar och ger feedback. **Klicka inte** på
+"Merge pull request" ännu.
 
 ![Github: pull request](images/21-github-pull-request-1.png)
 
-Låt oss nu säga att någon ser att någonting behövs läggas till i vår `.gitignore`, i detta fallet får jag simulera det på egen hand.
+Låt oss nu säga att någon ser att någonting behövs läggas till i vår
+`.gitignore`, i detta fallet får jag simulera det på egen hand.
 
 ![Github: pull request comment](images/22-github-pull-request-2.png)
 
-Kommentaren föreslår att vi ska även ignorera systemfiler från Windows i vår `.gitignore`. Då går vi tillbaka till [gitignore.io](https://gitignore.io). Söker upp Windows och kopierar in detta innehåll i vår textredigare, det vill säga i slutet av vår `.gitignore`.
+Kommentaren föreslår att vi ska även ignorera systemfiler från Windows i vår
+`.gitignore`. Då går vi tillbaka till [gitignore.io][gitignore], söker upp
+Windows och kopierar in detta innehåll i vår textredigare, det vill säga i
+slutet av vår `.gitignore`.
 
 ![Gitignore: search windows](images/gitignore-io-add-windows.png)
 ![Gitignore: copy windows](images/gitignore-io-copy-windows.png)
@@ -200,44 +260,60 @@ Därefter sparar våra ändringar (*commit*) och skickar dom till GitHub (*push*
 
 ![Github desktop: commit update gitignore](images/23-github-desktop-add-windows-to-gitignore.png)
 
-*Glöm inte klicka Push origin.*
+:exclamation: **Glöm inte** att klicka på "Push origin".
 
-Nu kan vi gå in till vår **pull request** (på GitHub) och se att vår *commit* har dykt upp.
+Nu kan vi gå in till vår *pull request* (på GitHub) och se att vår *commit* har
+dykt upp.
 
 ![Github: pull request update](images/24-github-pull-request-3.png)
 
-Nu känner vi oss redo med vår version och går därför vidare till att stoppa in vår version (*merge*) till **master branchen**.
+Nu känner vi oss redo med vår version och går därför vidare till att stoppa in
+vår version (*merge*) till vår `master`.
 
 ![Github: merge pull request](images/26-github-merge-pull-request-2.png)
 ![Github: merge pull request complete](images/27-github-pull-request-4.png)
 
-Nu är vi färdiga med vår version (*branch*), som var till för att skapa ändringar till `.gitignore`. Då kan vi radera den både lokalt och på GitHub. Detta gör vi enklast genom GitHub Desktop (i huvudmenyn hittar ni Branch -> Delete).
+Nu är vi färdiga med vår version (*branch*), som var till för att skapa
+ändringar till `.gitignore`. Då kan vi radera den både lokalt och på GitHub.
+Detta gör vi enklast genom GitHub Desktop, i huvudmenyn hittar ni "Branch" ->
+"Delete".
 
 ![Github desktop: delete branch](images/28-github-desktop-delete-branch.png)
 
-Nästa steg är nu att hämta denna ändringen från GitHub (vår tidigare *merge*) till vår lokala **master**.
+Nästa steg är nu att hämta denna ändringen från GitHub (vår tidigare *merge*)
+till vår lokala `master`.
 
 ![Github desktop: fetch and pull to master](images/29-github-desktop-pull-origin-master.png)
 
-Nu kan vi se historiken från vår *branch* (version) även i **mastern**.
+Nu kan vi se historiken från vår *branch* (version) även i vår `master`.
 
 ![Github desktop: new master branch history](images/30-github-desktop-history.png)
 
 #### GitHub flow
 
-Nu har ni gått igenom den process som kan nyttjas för alla era ändringar, **dock** finns det fler metoder men denna är något som ingår i GitHubs egna förslag till att arbeta med Git och GitHub - [GitHub flow](https://guides.github.com/introduction/flow/).
+Nu har ni gått igenom den process som kan nyttjas för alla era ändringar,
+**dock** finns det fler metoder men denna är något som ingår i GitHubs egna
+förslag till att arbeta med Git och GitHub - [GitHub flow][flow].
 
-Kärnan för denna är att varje gång ni vill göra ändringar skapar ni en *branch*, gör de *commits* som behövs, sedan skapar ni en *pull request* och slutligen om allting ser bra ut gör ni en *merge* till *mastern*.
+Kärnan för denna metod är att varje gång ni vill göra ändringar skapar ni en
+*branch*, gör de *commits* som behövs, sedan skapar ni en *pull request* och
+slutligen om allting ser bra ut så gör ni en *merge* till er `master`.
 
 ![GitHub flow](images/github-flow.png)
 
 ### Merge
 
-Ett alternativ till arbetsprocessen *GitHub flow* är att istället för att skapa en *pull request* så bestämmer vi oss för att göra en *merge* till *mastern* direkt - *utan att någon granskar vår kod*. Detta har både för- och nackdelar. En fördel med detta är att processen blir snabbare och nackdelen att det ökar risken för att någonting blir fel eftersom ingen kommer granska vår kod.
+Ett alternativ till arbetsprocessen *GitHub flow* är att istället för att skapa
+en *pull request* så bestämmer vi oss för att göra en *merge* till vår `master`
+direkt (**utan att någon granskar vår kod**). Detta har både för- och nackdelar.
+En fördel med detta är att processen blir snabbare och nackdelen att det ökar
+risken för att någonting blir fel eftersom att ingen kommer granska vår kod.
 
-För större ändringar rekommenderas det att utgå från *GitHub flow* och för mindre ändringar så kan en enkel *merge* vara tillräckligt.
+För större ändringar rekommenderas det att utgå från *GitHub flow* och för
+mindre ändringar så kan en enkel *merge* vara tillräckligt.
 
-Som exempel tänker jag redigera min `README.md` med en mindre ändring. Vi börjar med att skapa en *branch* för denna ändring.
+Som exempel tänker jag redigera min `README.md` med en mindre ändring. Vi börjar
+med att skapa en *branch* för denna ändring.
 
 ![Github desktop: create branch readme](images/32-github-desktop-create-branch-project-description.png)
 
@@ -249,7 +325,8 @@ Därefter börjar jag göra mina ändringar.
 
 ![Atom: readme changes](images/34-atom-update-readme.png)
 
-Sedan gör vi en *commit* av dessa ändringar och därefter publicerar vi detta ("Publish branch" eller "Push origin").
+Sedan gör vi en *commit* av dessa ändringar och därefter publicerar vi detta,
+"Publish branch" eller "Push origin".
 
 ![Github desktop: commit readme](images/35-github-desktop-commit-project-description.png)
 
@@ -257,7 +334,9 @@ Vi kan nu kontrollera att våra ändringar kommit upp till GitHub.
 
 ![Github: check readme changes](images/37-github-check-project-description.png)
 
-Nu är nästa steg att utföra vår *merge*. När vi gör en *merge* måste vi byta *branch* (dvs. en *checkout*) till **den branch vi vill merga till**, i vårt fall är detta vår *master*.
+Nu är nästa steg att utföra vår *merge*. När vi gör en *merge* måste vi byta
+*branch* (dvs. en *checkout*) till **den branch vi vill merga till**, i vårt
+fall är detta vår `master`.
 
 ![Github desktop: switch to master](images/38-github-desktop-switch-to-master.png)
 
@@ -269,9 +348,24 @@ Sen väljer vi att vi ska *merga* `update-project-description` till `master`.
 
 ### Konflikter
 
-Konflikter i Git är vanligt förekommande och uppstår oftast när en person ändrar någonting i en fil på samma ställe som en annan. Konflikten uppstår när vi utför en *merge* från en *branch* till en annan. Till exempel låt oss säga att **person 1** skapar *branchen* `update-readme` och **person 2** skapar `readme-edits`, sedan gör **person 1** en *merge* till *master* - inga problem - men,  när **person 2** sedan gör en *merge* till *master* så upptäcker Git att ändringarna från **person 2** krockar med dom från **person 1** (till exempel kanske dom båda har ändrat ett par ord i samma rubrik) - då får vi en konflikt och Git kommer markera denna i den berörda filen. Därefter måste vi bestämma oss för vilken av ändringarna vi vill behålla, det vill säga den från **person 1** eller från **person 2**. Detta kan göras i valfri textredigerare men Atom löser detta genom att vi enkelt kan klicka på den ändring vi vill behålla och sedan fortsätta med vår *merge*.
+Konflikter i Git är vanligt förekommande och uppstår oftast när en person ändrar
+någonting i en fil på samma ställe som en annan. Konflikten uppstår när vi utför
+en *merge* från en *branch* till en annan. Till exempel låt oss säga att Lisa
+skapar *branchen* `update-readme` och Petter skapar `readme-edits`, sedan gör
+Lisa en *merge* till `master`, inga problem. Men när Petter sedan gör en *merge*
+till `master` så upptäcker Git att ändringarna från Lisa krockar med dom från
+Petter (till exempel kanske dom båda har ändrat ett par ord i samma rubrik), då
+får vi en konflikt och Git kommer markera detta i den berörda filen. Därefter
+måste vi bestämma oss för vilken av ändringarna vi vill behålla, det vill säga
+den från Lisa eller Petter. Detta kan göras i valfri textredigerare men Atom
+löser detta genom att vi enkelt kan klicka på den ändring vi vill behålla och
+sedan fortsätta med vår *merge*.
 
-Det kan vara svårt att förstå hur detta fungerar genom att bara läsa så istället kommer jag demonstrera detta. I detta fallet kommer jag ha två stycken *branches* som båda ska göra ändringar till `README.md` som sedan ska *mergas* till *master*, men båda dessa *branches* gör ändringar på samma ställe vilket innebär att en konflikt kommer att uppstå.
+Det kan vara svårt att förstå hur detta fungerar genom att bara läsa så istället
+kommer jag demonstrera detta. I detta fallet kommer jag ha två stycken
+*branches* som båda ska göra ändringar till filen `README.md` som sedan ska
+*mergas* till min `master`, men båda dessa *branches* gör ändringar på samma
+ställe vilket innebär att en konflikt kommer att uppstå.
 
 **Branch 1:** `update-working-with`,  ändringar och sedan en commit.
 
@@ -287,11 +381,12 @@ Det kan vara svårt att förstå hur detta fungerar genom att bara läsa så ist
 
 ![Github desktop: readme merge 1](images/53-github-desktop-readme-merge-1.png)
 
-**Merge 2:** från `update-readme` till `master` - **en konflikt uppstår**.
+**Merge 2:** från `update-readme` till `master` (**en konflikt uppstår**).
 
 ![Github desktop: readme merge 2](images/54-github-desktop-readme-merge-2.png)
 
-När vi går vidare (eftersom vi faktiskt vill *merga* våra ändringar till *mastern*) presenteras vi med följande:
+När vi går vidare (eftersom vi faktiskt vill *merga* våra ändringar till
+vår `master`) presenteras vi med följande:
 
 ![Github desktop: readme conflict 1](images/55-github-desktop-readme-conflict-1.png)
 
@@ -300,14 +395,21 @@ För att lösa denna konflikt så väljer jag att öppna Atom genom GitHub Deskt
 ![Atom: readme conflict 2](images/56-atom-readme-conflict-2.png)
 ![Atom: readme conflict 3](images/57-atom-readme-conflict-3.png)
 
-När vi har löst vår konflikt (valt vilka ändringar att behålla), så går vi tillbaka till GitHub Desktop och väljer att *committa* vår *merge* och sedan *pushar* vi till GitHub.
+När vi har löst vår konflikt (valt vilka ändringar att behålla), så går vi
+tillbaka till GitHub Desktop och väljer att *committa* vår *merge* och sedan
+*pushar* vi till GitHub.
 
 ![Github desktop: readme conflict 4](images/58-github-desktop-readme-conflict-4.png)
 ![Github desktop: readme conflict 5](images/59-github-desktop-readme-conflict-5.png)
 
 ### Att lösa en konflikt utan Atom
 
-Att lösa en konflikt utan Atom innebär bara mer handpåläggning, att istället för att klicka på "Use me" som i skärmdumparna ovan så kommer ni själva behöva radera den del av konflikten (det är alltid två delar) som ni inte vill ha kvar. Låt oss säga att vi får en konflikt där två personer har namnget en rubrik på varsitt vis. Vår nuvarande *branch* kommer vara `HEAD` och den andres ändringar kommer från *branchen* `update-header`, då hade vi kunnat få något likt:
+Att lösa en konflikt utan Atom innebär bara mer handpåläggning, att istället för
+att klicka på "Use me" som i skärmdumparna ovan så kommer ni själva behöva
+radera den del av konflikten (det är alltid två delar) som ni inte vill ha kvar.
+Låt oss säga att vi får en konflikt där två personer har namnget en rubrik på
+varsitt vis. Vår nuvarande *branch* kommer vara `HEAD` och den andras ändringar
+kommer från *branchen* `update-header`, då hade vi kunnat få något likt:
 
 ```
 <<<<<<< HEAD
@@ -321,17 +423,25 @@ Att lösa en konflikt utan Atom innebär bara mer handpåläggning, att iställe
 >>>>>>> update-header
 ```
 
-Här kan vi se de nuvarande ändringarna (dvs. `## Översikt`) mot den andres (dvs. `## Innehållsförteckning`). Om jag nu vill använda mig av den andres ändringar får jag själv radera det som Git har lagt till.
+Här kan vi se de nuvarande ändringarna (dvs. `## Översikt`) mot den andres (dvs.
+`## Innehållsförteckning`). Om jag nu vill använda mig av den andras ändringar
+får jag själv radera det som Git har lagt till.
 
 ```
 ## Innehållsförteckning
 ```
 
-Så - för att lösa denna konflikten manuellt fick jag radera delvis den övre rubriken (`## Översikt`) men även det som märkte upp konflikten: `<<<<<<< HEAD`, `=======`, `>>>>>>> update-header`. Därefter kan jag enkelt göra en *commit* igen och sedan fortsätta med min *merge*.
+Så - för att lösa denna konflikten manuellt fick jag radera den övre rubriken
+(`## Översikt`) men även det som märkte upp konflikten (det Git själv lägger
+till): `<<<<<<< HEAD`, `=======` och `>>>>>>> update-header`. Därefter kan jag
+enkelt göra en *commit* igen och sedan fortsätta med min *merge*.
 
 ### Individuella commits
 
-Ibland är det en bra idé att göra commits för antingen en fil eller flera filer samtidigt. Till exempel om vi lagt till alla våra filer för första gången eller om vi suttit en längre tid och arbetat på flera filer men känner oss färdiga med en och vill sedan spara just den.
+Ibland är det en bra idé att göra commits för antingen en fil eller flera filer
+samtidigt. Till exempel om vi lagt till alla våra filer för första gången eller
+om vi suttit en längre tid och arbetat på flera filer men känner oss färdiga med
+en och vill sedan spara just den.
 
 Nedan finner ni ett par skärmdumpar som demonstrerar några exempel.
 
@@ -343,8 +453,28 @@ Nedan finner ni ett par skärmdumpar som demonstrerar några exempel.
 
 ### Emojis
 
-Ni kan i era markdownfiler, till exempel `README.md`, och i era *commit* meddelanden inkludera Emojis. Detta görs genom att ni skriver `:smiley:` för :smiley:. [Här hittar ni en referenslista för Emojis](https://gist.github.com/rxaviers/7360908).
+Ni kan i era markdownfiler, till exempel `README.md`, och i era *commit*
+meddelanden inkludera Emojis. Detta görs genom att ni skriver `:smiley:` för
+:smiley:. [Här hittar ni en referenslista för
+Emojis][emojis].
 
 ### README
 
-Att skriva en tydlig `README.md` är viktigt om ni arbetar i ett projekt med många deltagare eller om projektet är publikt. [Här hittar ni en bra grundläggande mall](https://github.com/dbader/readme-template) och [här är en sammanställning över bra skrivna READMEs](https://github.com/matiassingers/awesome-readme).
+Att skriva en tydlig `README.md` är viktigt om ni arbetar i ett projekt med
+många deltagare eller om projektet är publikt. [Här hittar ni en bra
+grundläggande mall][template] och [här är en sammanställning över bra skrivna
+READMEs][readme].
+
+[desktop]: https://desktop.github.com
+[images]: https://github.com/trumtomte/introduktion-git-och-github/tree/master/images
+[join]: https://github.com/join
+[atom]: https://atom.io
+[vsc]: https://code.visualstudio.com
+[md]: https://guides.github.com/features/mastering-markdown/
+[gh]: https://github.com
+[gitignore]: https://gitignore.io
+[monogame]: https://raw.githubusercontent.com/CartBlanche/MonoGame-Samples/master/.gitignore
+[flow]: https://guides.github.com/introduction/flow/
+[emojis]: https://gist.github.com/rxaviers/7360908
+[template]: https://github.com/dbader/readme-template
+[readme]: https://github.com/matiassingers/awesome-readme
