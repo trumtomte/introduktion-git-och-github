@@ -377,4 +377,4 @@ till Unix.
 [install]: https://git-scm.com/downloads
 [iterm2]: https://www.iterm2.com
 [putty]: https://www.putty.org
-[window2unix]: https://www.lemoda.net/windows/windows2unix/windows2unix.html
+[windows2unix]: https://www.lemoda.net/windows/windows2unix/windows2unix.html
