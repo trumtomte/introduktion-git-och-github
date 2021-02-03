@@ -1,7 +1,7 @@
 # Övningsinstruktioner
 
 Inför denna övning kan ni välja att antingen använda er av [GitHub
-Desktop][desktop] eller att arbeta med [Git i terminalen][]. Jag rekommenderar
+Desktop][desktop] eller att arbeta med [Git i terminalen][cli]. Jag rekommenderar
 er att börja med GitHub Desktop om ni nybörjare.
 
 ## Instruktioner
