@@ -33,8 +33,8 @@ när en anslutning blir tillgänglig. Skulle dessutom vår server krasha så har
 fortfarande hela projektet lokalt och kan snabbt komma på fötterna igen.
 
 Git är idag också det mest använda VCS och har använts sedan 2005, då det
-skapades av [Linus Torvalds][linus], personen som skapade [Linux][linux]
-(operativsystemet).
+skapades av [Linus Torvalds][linus], personen som skapade operativsystemet
+[Linux][linux].
 
 <sup>1</sup>I vårat fall innebär detta att ladda upp våra ändringar på
 GitHub.
