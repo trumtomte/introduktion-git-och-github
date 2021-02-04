@@ -60,14 +60,14 @@ med personer som vi annars inte träffat.
 Utöver att kunna utforska andras projekt och samarbeta med andra personer har
 GitHub också ett starkt stöd för integration med olika tjänster. Det kan vara
 allt från att testning ska köras på ett projekt innan det publiceras på en
-server till att projektledare ska enkelt se vad som gjorts och vad som behöver
+server till att projektledare enkelt kan se vad som gjorts och vad som behöver
 göras.
 
 ## Fortsatt läsning
 
 För att sätta sig in mer om just versionshantering med Git så rekommenderas det
-att läsa [What is version control][vcs]. Denna bearbetar grundläggande koncept
-som versionskontrollsystem till praktiska Git-kommandon för att kunna
+att läsa [What is version control][vcs]. Denna guide går igenom grundläggande
+koncept som versionskontrollsystem till praktiska Git-kommandon för att kunna
 versionhantera.
 
 [scm]: https://git-scm.com
