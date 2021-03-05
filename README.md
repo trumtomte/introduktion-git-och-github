@@ -4,9 +4,9 @@
 
 ## Översikt
 
-* [Övningsinstruktioner](exercise-instructions.md)
 * [Vad är Git och GitHub?](what-are-git-and-github.md)
 * [Arbeta med GitHub Desktop](working-with-github-desktop.md)
+* [Övningsinstruktioner](exercise-instructions.md)
 * [Tips och tricks](tips-and-tricks.md)
 * [Terminalen](the-terminal.md)
 * [Terminalen och Git](the-terminal-and-git.md)
