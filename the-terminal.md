@@ -32,7 +32,7 @@ terminalprogram:
 :exclamation: Skulle ni råka öppna upp något program i terminalen som ni inte
 lyckas stänga av kan ni pröva att båda trycka `CTRL + c` eller `q`.
 
-## Kom igån
+## Kom igång
 
 När ni öppnar er terminal för första gången presenteras ni oftast med något
 liknande:

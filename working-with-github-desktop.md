@@ -6,29 +6,29 @@
 
 ## Innehållsförteckning
 
-* [Förord](#Förord)
-* [Förberedelser](#Förberedelser)
-* [Terminologi](#Terminologi)
-* [Skapa ett repository](#Skapa-ett-repository)
-  - [Lägg till användare](#Lägg-till-användare)
-* [Arbeta lokalt med GitHub Desktop](#Arbeta-lokalt-med-GitHub-Desktop)
-  - [Klona ett repository](#Klona-ett-repository)
-  - [Arbetsvy](#Arbetsvy)
-  - [Historik](#Historik)
-* [Göra ändringar](#Göra-ändringar)
-  - [Skapa en branch](#Skapa-en-branch)
-  - [Uppdatera .gitignore](#Uppdatera-.gitignore)
-  - [Publicera ändringar](#Publicera-ändringar)
-  - [Pull request](#Pull-request)
-    - [GitHub flow](#GitHub-flow)
-  - [Merge](#Merge)
-* [Vanliga situationer](#Vanliga-situationer)
-  - [Konflikter](#Konflikter)
-  - [Att lösa en konflikt utan Atom](#Att-lösa-en-konflikt-utan-Atom)
-  - [Individuella commits](#Individuella-commits)
-* [Tips och tricks](#Tips-och-tricks)
-  - [Emojis](#Emojis)
-  - [README](#README)
+- [Förord](#förord)
+- [Förberedelser](#förberedelser)
+- [Terminologi](#terminologi)
+- [Skapa ett repository](#skapa-ett-repository)
+  - [Lägg till användare](#lägg-till-användare)
+- [Arbeta lokalt med GitHub Desktop](#arbeta-lokalt-med-gitHub-desktop)
+  - [Klona ett repository](#klona-ett-repository)
+  - [Arbetsvy](#arbetsvy)
+  - [Historik](#historik)
+- [Göra ändringar](#göra-ändringar)
+  - [Skapa en branch](#skapa-en-branch)
+  - [Uppdatera .gitignore](#uppdatera-gitignore)
+  - [Publicera ändringar](#publicera-ändringar)
+  - [Pull request](#pull-request)
+  - [GitHub flow](#gitHub-flow)
+  - [Merge](#merge)
+- [Vanliga situationer](#vanliga-situationer)
+  - [Konflikter](#konflikter)
+  - [Att lösa en konflikt utan Atom](#att-lösa-en-konflikt-utan-atom)
+  - [Individuella commits](#individuella-commits)
+- [Tips och tricks](#tips-och-tricks)
+  - [Emojis](#emojis)
+  - [README](#readme)
 
 ## Förord
 
@@ -40,6 +40,8 @@ bäst för ert projekt.
 Det finns en hel del skärmdumpar som inte används i denna guiden som eventuellt
 kan vara till nytta, dessa hittar ni i mappen [images][images] i detta
 repository.
+
+❕Vissa skärmdumpar innehåller en *branch* vid namn `master` som numera är omdöpt till `main`.
 
 ## Förberedelser
 
@@ -147,7 +149,7 @@ vilka ändringar som gjorts (baserat på den fil ni markerat i vänsterspalten).
 
 Om ni behöver ändra vilken textredigerare som ska gälla går ni in under
 inställningar. Välj "Preferences" -> "Integrations" och sedan kan ni byta
-textredigerare (t.ex. som i mitt fall, till Atom).
+textredigerare (t.ex. som i mitt fall, till Atom). **Detta är valfritt**.
 
 ![Github desktop: preferences](images/10-github-desktop-preferences.png)
 
@@ -203,9 +205,6 @@ Därefter skickas ni till en sida innehållande den text som ska placeras i
 `.gitignore`, **kopiera all text**.
 
 ![Gitignore: copy](images/gitignore-io-copy.png)
-
-:exclamation: **Om ni utgår från MonoGame kan ni** [använda denna
-.gitignore][monogame].
 
 I mitt fall hade jag öppnat min textredigerare Atom och **klistrat** in detta
 innehållet och sedan **sparat** filen:

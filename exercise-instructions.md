@@ -2,12 +2,9 @@
 
 Inför denna övning kan ni välja att antingen använda er av [GitHub
 Desktop][desktop] eller att arbeta med [Git i terminalen][cli]. Jag rekommenderar
-er att börja med GitHub Desktop om ni nybörjare.
+er att börja med GitHub Desktop om ni är nybörjare.
 
 ## Instruktioner
-
-Punkterna nedan ska utföras innan vårat zoommöte. På mötet kommer vi diskutera
-hur det har gått och lösa eventuella problem ni stött på.
 
 1. Skapa ett repository för ert projekt (**en** projektmedlem gör detta).
 2. Bjuda in samtliga projektmedlemmar till ert repository.
