@@ -5,9 +5,9 @@ Läs igenom instruktioner nogrannt innan ni påbörjar något arbete.
 
 1. [Steg 1](#steg-1)
 2. [Steg 2](#steg-2)
-3. [Steg 3: Övningsinstruktioner)](#steg-3-övningsinstruktioner)
-4. [Steg 4: Guide)](#steg-4-guide)
-5. [Steg 5: Självstudier)](#steg-5-självstudier)
+3. [Steg 3: Övningsinstruktioner](#steg-3-övningsinstruktioner)
+4. [Steg 4: Guide](#steg-4-guide)
+5. [Steg 5: Självstudier](#steg-5-självstudier)
 
 ## Steg 1
 
