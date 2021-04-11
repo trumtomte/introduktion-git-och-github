@@ -5,9 +5,9 @@ Läs igenom instruktioner nogrannt innan ni påbörjar något arbete.
 
 1. [Steg 1](#steg-1)
 2. [Steg 2](#steg-2)
-3. [Steg 3 (övningsinstruktioner)](#steg-3-övningsinstruktioner)
-4. [Steg 4 (guide)](#steg-4-guide)
-5. [Steg 5 (självstudier)](#steg-5-självstudier)
+3. [Steg 3: Övningsinstruktioner)](#steg-3-övningsinstruktioner)
+4. [Steg 4: Guide)](#steg-4-guide)
+5. [Steg 5: Självstudier)](#steg-5-självstudier)
 
 ## Steg 1
 
@@ -18,7 +18,7 @@ Läs [denna korta översikt av Git och GitHub](what-are-git-and-github.md).
 Registrera er [på GitHub][join] och ladda sedan ner [GitHub
 Desktop][desktop].
 
-## Steg 3 (övningsinstruktioner)
+## Steg 3: Övningsinstruktioner
 
 Efter dagens övnings ska ni ha:
 
@@ -35,7 +35,7 @@ Efter dagens övnings ska ni ha:
     - Gjort minst en *commit* med sina ändringar till sin *branch*.
     - Gjort minst en *merge* från sin *branch* till `main`.
 
-## Steg 4 (guide)
+## Steg 4: Guide
 
 ### Förberedelser
 
@@ -177,7 +177,7 @@ Sen väljer vi att vi ska *merga* `update-project-description` till `main`.
 Där efter har ni möjlighet att klicka på *Push* så att alla era ändringar nu
 laddas upp till er *remote* (dvs. GitHubs hemsida).
 
-## Steg 5 (självstudier)
+## Steg 5: Självstudier
 
 Det som precis gjordes i steg 4 ska ni nu upprepa på egen hand men det måste ske
 i en ny *branch* och i en annan fil än `README.md`.
