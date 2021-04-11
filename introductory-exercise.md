@@ -1,5 +1,8 @@
 # En inledande övning till Git och GitHub
 
+Denna övning är indelad i 5 steg och det är viktigt att ni följer denna ordning.
+Läs igenom instruktioner nogrannt innan ni påbörjar något arbete.
+
 ## Steg 1
 
 Läs [denna korta översikt av Git och GitHub](what-are-git-and-github.md).
@@ -16,8 +19,6 @@ Efter dagens övnings ska ni ha:
 1. Registrerat er på GitHub.
 2. Skapat ett repository att arbeta med.
 3. Lagt till en `.gitignore` med något innehåll.
-    - Detta kan göras när ni skapar erat repository. Ni får då möjlighet att
-        välja från en flervals lista, välj *node*.
 4. Lagt till erat projekts (repository) första filer.
     - Återanvänd det material ni har från *Uppgift 1*.
 5. Gjort ändringar till filen `README.md` (vad ni gör för ändringar är upp till
@@ -167,10 +168,25 @@ Sen väljer vi att vi ska *merga* `update-project-description` till `main`.
 
 ![Github desktop: merge to main](images/39-github-desktop-merge-into-master.png)
 
+Där efter har ni möjlighet att klicka på *Push* så att alla era ändringar nu
+laddas upp till er *remote* (dvs. GitHubs hemsida).
+
 ## Steg 5 (självstudier)
 
 Det som precis gjordes i steg 4 ska ni nu upprepa på egen hand men det måste ske
 i en ny *branch* och i en annan fil än `README.md`.
+
+**Börja med** att skapa en *branch*. Kopiera sedan in alla era filer (t.ex. från
+Uppgift 1). Sedan i GitHub Desktop gör ni en *commit* med meddelandet "Added
+project files".
+
+**Därefter** ska ni göra någon redigering i en fil (t.ex. lägga till en
+kommentar i en JavaScript-fil). Sedan gör ni ännu en *commit*.
+
+**Avsluta** sedan med att göra en *merge* till `main`.
+
+Ni bör nu kunna besöka erat repository på GitHubs hemsida och se alla filer och
+den lilla ändring ni precis gjort.
 
 Lycka till!
 
