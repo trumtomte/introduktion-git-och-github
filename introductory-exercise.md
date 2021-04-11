@@ -3,6 +3,12 @@
 Denna övning är indelad i 5 steg och det är viktigt att ni följer denna ordning.
 Läs igenom instruktioner nogrannt innan ni påbörjar något arbete.
 
+1. [Steg 1](#steg-1)
+2. [Steg 2](#steg-2)
+3. [Steg 3 (övningsinstruktioner)](#steg-3-ovningsinstruktioner)
+4. [Steg 4 (guide)](#steg-4-guide)
+5. [Steg 5 (självstudier)](#steg-5-sjalvstudier)
+
 ## Steg 1
 
 Läs [denna korta översikt av Git och GitHub](what-are-git-and-github.md).
