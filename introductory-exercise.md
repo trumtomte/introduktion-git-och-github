@@ -20,7 +20,7 @@ Desktop][desktop].
 
 ## Steg 3: Övningsinstruktioner
 
-Efter dagens övnings ska ni ha:
+Efter dagens övning ska ni ha:
 
 1. Registrerat er på GitHub.
 2. Skapat ett repository att arbeta med.
