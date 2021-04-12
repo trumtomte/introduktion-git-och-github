@@ -29,7 +29,7 @@ Efter dagens övning ska ni ha:
     - Återanvänd det material ni har från *Uppgift 1*.
 5. Gjort ändringar till filen `README.md` (vad ni gör för ändringar är upp till
    er själva).
-6. Utöver detta ska ni även (på egen hand) hade gjort följande:
+6. Utöver detta ska ni även (på egen hand) ha gjort följande:
     - Skapat minst en *branch*, så att ändringar kan göras (vad ni gör för
        ändringar är upp till er själva).
     - Gjort minst en *commit* med sina ändringar till sin *branch*.
