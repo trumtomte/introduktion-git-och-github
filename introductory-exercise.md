@@ -1,7 +1,7 @@
 # En inledande övning till Git och GitHub
 
 Denna övning är indelad i 5 steg och det är viktigt att ni följer denna ordning.
-Läs igenom instruktioner nogrannt innan ni påbörjar något arbete.
+Läs igenom instruktioner noggrant innan ni påbörjar något arbete.
 
 1. [Steg 1](#steg-1)
 2. [Steg 2](#steg-2)
