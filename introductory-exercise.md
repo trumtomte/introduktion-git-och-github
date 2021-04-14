@@ -1,7 +1,5 @@
 # En inledande övning till Git och GitHub
 
-En påhittad bit text.
-
 Denna övning är indelad i 5 steg och det är viktigt att ni följer denna ordning.
 Läs igenom instruktioner noggrant innan ni påbörjar något arbete.
 
