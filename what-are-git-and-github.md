@@ -6,10 +6,10 @@
 
 Ett versionskontrollsystem (VCS) är ett program (eller en uppsättning program)
 som spårar ändringar i en samling filer (så som källkod och dokumentation).
-Detta innebär att vi kan enkelt se tidigare versioner av enskilda filer eller
+Detta innebär att vi enkelt kan se tidigare versioner av enskilda filer eller
 hela vårt projekt. Det vill säga att vi får en spårbar historik över alla
 ändringar som gjorts. Med ett VCS så kan flera personer i ett team arbeta med
-ett projekt, även samma fil, utan att påverka varandra.
+ett projekt utan att påverka varandra (även i samma fil).
 
 En annan term som vanligtvis dyker upp i samband med versionskontrollsystem är
 Software Configuration Management (SCM) och används ibland som en synonym till
@@ -36,7 +36,7 @@ Git är idag också det mest använda VCS och har använts sedan 2005, då det
 skapades av [Linus Torvalds][linus], personen som skapade operativsystemet
 [Linux][linux].
 
-<sup>1</sup>I vårat fall innebär detta att ladda upp våra ändringar på
+<sup>1</sup>I vårat fall innebär detta att ladda upp våra ändringar till
 GitHub.
 
 ## GitHub
