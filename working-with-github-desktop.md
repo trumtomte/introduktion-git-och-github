@@ -1,5 +1,7 @@
 # Arbeta med GitHub Desktop
 
+**Detta material kommer revideras inför v13 2022**
+
 > En guide för att arbeta med [GitHub Desktop][desktop].
 
 ![GitHub Desktop](images/github-desktop-landing-page.png)

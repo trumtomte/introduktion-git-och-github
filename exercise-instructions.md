@@ -1,5 +1,7 @@
 # Övningsinstruktioner
 
+**Detta material kommer revideras inför v13 2022**
+
 Inför denna övning kan ni välja att antingen använda er av [GitHub
 Desktop][desktop] eller att arbeta med [Git i terminalen][cli]. Jag rekommenderar
 er att börja med GitHub Desktop om ni är nybörjare.
