@@ -1,7 +1,5 @@
 # Arbeta med GitHub Desktop
 
-> En guide för att arbeta med [GitHub Desktop](https://desktop.github.com)
-
 Denna guide består av tre delar och bör genomföras i den ordning som presenteras
 nedan. För att göra detta måste ni ha [registrerat er på GitHub](https://github.com/join) och installerat [GitHub Desktop](https://desktop.github.com).
 
