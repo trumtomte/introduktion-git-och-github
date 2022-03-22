@@ -107,7 +107,6 @@ alla kunna *fetcha* för att se att det faktiskt fungerade.
 
 ## Färdig
 
-Nu är ni färdiga och kan gå vidare med att skapa era branches och gå vidare med
-projektet. Vi har dock skapat en sista del med ett par [vanliga situationer inom
-versionshantering](common-situations.md), mest nämnvärt är sk. *Merge conflicts*
-och hur ni kan lösa dom på egen hand.
+Nu är ni färdiga med alla övningar. Vi har dock skapat en sista del med ett par
+[vanliga situationer inom versionshantering](common-situations.md), mest
+nämnvärt är sk. *Merge conflicts* och hur ni kan lösa dom på egen hand.
