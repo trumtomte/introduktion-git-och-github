@@ -1,5 +1,10 @@
 # Tips och tricks
 
+> Här samlar vi lite allt möjligt
+
+Skulle ni versionshantera via terminalen och något inte funkar som det ska kan
+ni alltid ta en titt på [Oh Shit, Git!?!](https://ohshitgit.com/).
+
 ## Unity
 
 1. Var noga med att `.gitignore` filen ska placeras i er rotmapp (där ni har
