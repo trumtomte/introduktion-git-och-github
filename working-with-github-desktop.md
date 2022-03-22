@@ -1,7 +1,9 @@
 # Arbeta med GitHub Desktop
 
 Denna guide består av tre delar och bör genomföras i den ordning som presenteras
-nedan. För att göra detta måste ni ha [registrerat er på GitHub](https://github.com/join) och installerat [GitHub Desktop](https://desktop.github.com).
+nedan. För att göra detta måste ni ha [registrerat er på
+GitHub](https://github.com/join) och installerat [GitHub
+Desktop](https://desktop.github.com).
 
 Det är viktigt att ni följer instruktionerna noga för att minska risken för
 problem nu och i framtiden. Observera att vissa moment kan endast genomföras av
