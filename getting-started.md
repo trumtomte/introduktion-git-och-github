@@ -44,8 +44,8 @@ ni startar detta så kommer ni presenteras med ett par alternativ (stora knappar
 till vänster). Välj "Clone a Repository [...]" och nu kan ni välja fliken
 "GitHub.com" och logga in (om ni inte redan är inloggad). Därefter söker ni upp
 ert repository och väljer det, observera att ni längre ner ser "Local Path",
-dvs. den mapp där ert repository kommer befinna sig. Det är även denna mapp som
-ni nu kommer arbeta från. Välj nu "Clone".
+det är den mapp där ert repository kommer befinna sig. Det är även denna mapp
+som ni nu kommer arbeta från. Välj nu "Clone".
 
 [Skärminspelning: klona ert repository](assets/V03-clone-repository.mp4)
 
