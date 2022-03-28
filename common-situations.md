@@ -1,4 +1,4 @@
-# Vanliga situationer
+# Del 3: Vanliga situationer
 
 > Del 3 av 3 i guiden [Arbeta med GitHub Desktop](working-with-github-desktop.md)
 
