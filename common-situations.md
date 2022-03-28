@@ -50,7 +50,7 @@ hjälper er att göra detta genom några få knapptryck istället.
 
 I del 2 beskrev vi en arbetsprocess som bestod av att skapa en *branch*, göra
 sina *commits* och sedan göra en *merge* till `main`. Detta är en variant på en
-arbetsprocess och ett företag kan ha sin egen för hur dom versionshanterar.
+arbetsprocess och olika företag har sina egna för hur dom versionshanterar.
 
 En populär metod idag är en som kallas för *GitHub Flow* och är mer eller mindre
 densamma som vi gick igenom, men istället för att göra en *merge* direkt till
