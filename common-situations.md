@@ -54,21 +54,23 @@ arbetsprocess och olika företag har sina egna för hur dom versionshanterar.
 
 En populär metod idag är en som kallas för *GitHub Flow* och är mer eller mindre
 densamma som vi gick igenom, men istället för att göra en *merge* direkt till
-`main` så görs en sk. *Pull Request* först. En *Pull Request* ett förslag till
+`main` så görs en sk. *Pull Request* först. En *Pull Request* är ett förslag till
 en *merge* men ger möjlighet för andra att se vad din *merge*, och dina
-*commits*, innehåller. Allt detta sker via GitHub och det ser ungefär ut som att
-ni öppnar en forumtråd där andra kan diskutera ditt förslag till ändringar.
+*commits*, innehåller innan den *mergas*. Allt detta sker via GitHub och det ser
+ungefär ut som att ni öppnar en forumtråd där andra kan diskutera ditt förslag
+till ändringar innan det slutligen godkänns.
 
 Denna metod (GitHub Flow) används väldigt mycket inom Open Source projekt på
-GitHub och därför väljer vi att presentera den här också.
+GitHub och därför rekommenderar vi (inget krav) att ni prövar den på egen hand.
 
 GitHub Desktop gör denna process väldigt enkelt. När ni arbetar på en *branch*
-och sedan har publicerat den och gjort några *commits* så ser ni att den fina
+och sedan har publicerat den, och gjort några *commits*, så ser ni att den fina
 blåa knappen innehåller "Create Pull Request". Den tar er direkt till GitHub och
-sedan kan ni fylla i lite mer beskrivning om ert förslag till ändringar.
-Därefter kan alla andra i projektet läsa mer om detta förslag på
+sedan kan ni fylla i en beskrivande text om ert förslag till ändringar. Därefter
+kan alla andra i projektet läsa mer om, och diskutera, detta förslag på
 `https://github.com/ANVÄNDARNAMN/REPOSITORY/pulls`. Den som skapade repositoryt
-kan sedan välja att gå vidare med att *merga* förslaget till, t.ex., `main`.
+kan sedan välja att gå vidare med att godkänna och sedan *merga* förslaget till,
+t.ex., `main`.
 
 Läs mer om [GitHub Flow här](https://docs.github.com/en/get-started/quickstart/github-flow).
 
