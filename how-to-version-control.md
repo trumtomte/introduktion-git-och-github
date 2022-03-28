@@ -6,11 +6,12 @@ I denna del ska ni börja med att **en** person redigerar filen `.gitignore`.
 Detta moment är **väldigt viktigt** att ni gör först. Filen `.gitignore`
 innehåller nämligen sökvägar till alla de filer som ni inte vill ska
 versionshanteras. Det kan vara allt från filer ert operativsystem skapar till de
-filer som er textredigerare konstant redigerar, t.ex. för era inställningar. Ni
-vill ju bara versionshantera filer som har med er kodbas att göra.
+filer som er textredigerare konstant redigerar i bakgrunden, t.ex. för era
+inställningar. Ni vill ju bara versionshantera filer som har med er kodbas att
+göra.
 
 När ovanstående är på plats ska ni som grupp pröva på att versionshantera. Ni
-kommer alla skapa varsin *branch*, så att alla arbetar i sin egen version av
+kommer alla att skapa varsin *branch*, så att alla arbetar i sin egen version av
 kodbasen. Efter ni gjort lite småändringar (skapa någon fil och sedan redigera
 den) ska ni testa att ändra till någon annan projektmedlems branch för att se
 vad dom gjort. Slutligen kommer ni att *merga* era ändringar till `main` (dvs.
