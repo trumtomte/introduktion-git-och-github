@@ -107,6 +107,9 @@ inte ska klistra in en mapp, utan mappens innehåll så att ert repository är d
 sk. "rotmappen". Gör en *commit* av detta och *pusha* till `main`. Sedan ska
 alla kunna *fetcha* för att se att det faktiskt fungerade.
 
+**Observera** att ni från och med nu arbetar utifrån er versionshanterade mapp
+(dvs. öppnar den i er textredigerare/IDE).
+
 ## Färdig
 
 Nu är ni färdiga med alla övningar. Vi har dock skapat en sista del med ett par
