@@ -2,6 +2,9 @@
 
 > Del 3 av 3 i guiden [Arbeta med GitHub Desktop](working-with-github-desktop.md)
 
+* [Merge Conflicts](#merge-conflicts)
+* [GitHub Flow](#github-flow)
+
 ## Merge conflicts
 
 En sk. *merge conflict* uppstår när två personer arbetar på samma ställe i en
