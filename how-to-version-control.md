@@ -81,16 +81,17 @@ Varje projektmedlem ska;
      högerklicka sedan på er *branch* och välj "Delete" (får ni frågan om att
      radera från er *remote* så bocka i "Yes")
 
-**TIPS 1:** innan ni skapar en ny *branch*, klicka på "Fetch origin", så att ni
-har de senaste ändringarna.
-
-**TIPS 2:** om det finns nya ändringar i `main` som ni kan dra nytta av i er
-egen *branch* kan ni givetvis göra en *merge* från `main` till er egen *branch*
-också.
-
 [Skärminspelning: versionshantera](assets/V05-how-to-version-control.mp4)
 
 [Skärminspelning: radera en branch](assets/V06-delete-a-branch.mp4)
+
+### Tips
+
+1. Innan ni skapar en ny *branch*, klicka på "Fetch origin", så att ni har de
+   senaste ändringarna.
+2. Om det finns nya ändringar i `main` som ni kan dra nytta av i er egen
+   *branch* kan ni givetvis göra en *merge* från `main` till er egen *branch*
+   också.
 
 ## Steg 3: Avslut
 
