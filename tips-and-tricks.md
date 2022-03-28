@@ -2,6 +2,8 @@
 
 > Här samlar vi lite allt möjligt
 
+## Terminalen och Git
+
 Skulle ni versionshantera via terminalen och något inte funkar som det ska kan
 ni alltid ta en titt på [Oh Shit, Git!?!](https://ohshitgit.com/).
 
