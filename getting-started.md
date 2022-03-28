@@ -30,8 +30,8 @@ versaler mot ert användarnamn och repository). Detta kräver att alla har
 registrerat sig först. Därefter kommer dom som blivit inbjudna att få ett mail
 med mer information.
 
-Ni kan inte gå vidare till Steg 3 föränns ni blivit inbjudna till ert
-repository.
+Nästa steg (3) och del (2) i guiden kräver att ni blivit inbjudna till ert
+repository. Så invänta samtliga projektmedlemmar innan ni går vidare.
 
 [Skärminspelning: bjuda in projektmedlemmar](assets/V02-invite-collaborators.mp4)
 
