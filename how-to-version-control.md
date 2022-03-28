@@ -1,4 +1,4 @@
-# Börja versionshantera
+# Del 2: Börja versionshantera
 
 > Del 2 av 3 i guiden [Arbeta med GitHub Desktop](working-with-github-desktop.md)
 
