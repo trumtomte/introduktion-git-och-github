@@ -2,10 +2,11 @@
 
 > Del 3 av 3 i guiden [Arbeta med GitHub Desktop](working-with-github-desktop.md)
 
-Parallellt till detta dokument finns också [Tips och Tricks](tips-and-tricks.md)
-
 * [Merge Conflicts](#merge-conflicts)
 * [GitHub Flow](#github-flow)
+
+Parallellt till detta dokument finns också dokumentet
+[Tips och Tricks](tips-and-tricks.md) med lite mer övrig information.
 
 ## Merge conflicts
 
