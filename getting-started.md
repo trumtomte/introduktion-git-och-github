@@ -1,4 +1,4 @@
-# Kom igång
+# Del 1: Kom igång
 
 > Del 1 av 3 i guiden [Arbeta med GitHub Desktop](working-with-github-desktop.md)
 
