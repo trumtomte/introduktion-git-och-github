@@ -33,6 +33,8 @@ beskrivning.
 | `.gitignore`   | En fil som innehåller sökvägar till andra filer som **inte** ska publiceras till på er *remote*   |
 | `README.md`    | Det innehåll som visas när någon besöker projektsidan på GitHub. Formateras enligt [Markdown][md] |
 
+## Guide
+
 När ni känner er redo kan ni gå vidare med guiden.
 
 1. [Kom igång](getting-started.md)
