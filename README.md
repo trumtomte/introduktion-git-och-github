@@ -7,6 +7,8 @@ Börja med att läsa igenom [Vad är Git och GitHub?](what-are-git-and-github.md
 och följ sedan instruktionerna i [Arbeta med GitHub
 Desktop](working-with-github-desktop.md).
 
+Här finner ni en bra [serie videos om Git](https://git-scm.com/videos).
+
 Rekommenderad läsning:
 
 - [What is version control](https://www.atlassian.com/git/tutorials/what-is-version-control)
