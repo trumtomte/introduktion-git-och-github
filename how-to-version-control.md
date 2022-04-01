@@ -71,7 +71,7 @@ Varje projektmedlem ska;
 7. välj nu *branch* `main`
    - klicka på samma knapp ("Current Branch") en gång till och längst ner finner
      ni knappen "Choose a branch to merge into **main**", klicka på den och välj
-     sedan er egen *branch*
+     sedan er egen *branch* och slutligen klicka på "Commit [...]"
 8. **PAUS:** invänta nu så att alla andra hunnit göra detta
 9. i den övre menyn finner ni knappen "Fetch origin", klicka på den
    - nu bör ni kunna se alla andras filer och deras innehåll
