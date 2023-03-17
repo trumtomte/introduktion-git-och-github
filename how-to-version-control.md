@@ -112,7 +112,7 @@ alla kunna *fetcha* för att se att det faktiskt fungerade.
 **Observera** att ni från och med nu arbetar utifrån er versionshanterade mapp
 (dvs. öppnar den i er textredigerare/IDE).
 
-### Steg 4: Versionshantera (omgång 2)
+## Steg 4: Versionshantera (omgång 2)
 
 ❕Detta görs av **alla** projektmedlemar.
 
