@@ -4,19 +4,20 @@
 
 I denna del ska ni skapa ert repository och bjuda in alla projektmedlemmar till
 det. Efter det ska ni se till att alla har klonat (dvs. laddat ner) ert
-repository så alla kan börja versionshantera, vilket sker i nästa del.
+repository så alla kan börja versionshantera, vilket sker i nästa del (2).
 
 ## Steg 1: Skapa ett nytt repository
 
 ❕Detta görs av **en** projektmedlem.
 
 För att skapa ett nytt repository går ni in på [Create a new
-repository](https://github.com/new). Välj ett namn som reflekterar er
-projektidé. Ni kan hoppa över att fylla i en beskrivning. Sedan **måste** ni
-ange ert repository som *Public* (annars kan vi inte granska det senare).
-Slutligen så bockar ni i "Add a README file" och "Add .gitignore" (ni kommer
-behöva välja en mall i detta fallet, sök bara på ert programmeringsspråk, t.ex.
-`python`, `java` eller `c++`). Slutligen kan ni även hoppa över valet av licens.
+repository](https://github.com/new). Välj ett namn som reflekterar er projektidé
+(eller bara projektnamnet). Ni kan hoppa över att fylla i en beskrivning. Sedan
+**måste** ni ange ert repository som *Public* (annars kan vi inte granska det
+senare). Slutligen så bockar ni i "Add a README file" och "Add .gitignore" (ni
+kommer behöva välja en mall i detta fallet, sök bara på ert programmeringsspråk,
+t.ex.  `python`, `java` eller `c++`). Slutligen kan ni även hoppa över valet av
+licens.
 
 [Skärminspelning: skapa ett nytt repository](assets/V01-create-repository.mp4)
 
@@ -43,9 +44,9 @@ I detta steget kommer ni behöva starta GitHub Desktop. Om det är första gång
 ni startar detta så kommer ni presenteras med ett par alternativ (stora knappar
 till vänster). Välj "Clone a Repository [...]" och nu kan ni välja fliken
 "GitHub.com" och logga in (om ni inte redan är inloggad). Därefter söker ni upp
-ert repository och väljer det, observera att ni längre ner ser "Local Path",
-det är den mapp där ert repository kommer befinna sig. Det är även denna mapp
-som ni nu kommer arbeta från. Välj nu "Clone".
+ert repository och väljer det, observera att ni längre ner ser "Local Path", det
+är den mapp där ert repository kommer befinna sig. Det är även denna mapp som ni
+nu kommer arbeta från (och samtidigt versionshantera). Välj nu "Clone".
 
 [Skärminspelning: klona ert repository](assets/V03-clone-repository.mp4)
 

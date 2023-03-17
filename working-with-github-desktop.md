@@ -11,32 +11,31 @@ en projektmedlem. Detta kommer markeras tydligt och ni som grupp får själva ut
 vem som gemomför dessa.
 
 Eftersom versionshantering kommer med sitt egna ordförråd av diverse begrepp har
-vi sammanställt en liten tabell över dom vanligaste termerna med en kort
+vi sammanställt en liten tabell nedan över dom vanligaste termerna med en kort
 beskrivning.
+
+När ni känner er redo kan ni gå vidare med att börja versionshantera.
+
+1. [Kom igång](getting-started.md)
+2. [Börja versionshantera](how-to-version-control.md)
+3. [Vanliga situationer](common-situations.md)
+
+## Terminologi
 
 | Term           | Beskrivning                                                                                       |
 |:---------------|:--------------------------------------------------------------------------------------------------|
 | repository     | Ert projekt (alla filer som ska versionshanteras)                                                 |
 | clone          | Att hämta (eller ladda ner) ett repository från, t.ex., github.com                                |
-| add            | Gruppera en eller flera filer (nya eller redigerade) för att sedan göra en *commit*               |
-| commit         | Spara ändringar från en eller flera filer med ett beskrivande meddelande                          |
-| branch         | En separat version av ert *repository* så att ni kan arbeta parallellt                            |
+| add            | Lägg till en eller flera filer (med ändringar) som ska ingå i nästa *commit* (version)            |
+| commit         | Skapa en ny version tillsammans med ett beskrivande meddelande                                    |
+| branch         | En parallell version (gren)                                                                       |
 | working copy   | Den nuvarande *branch* som ni arbetar i                                                           |
-| merge          | Slå samman *commits* från en *branch* till en annan (t.ex. från din egen till `main`)             |
+| merge          | Slå ihop *commits* från en *branch* till en annan (t.ex. från din egen till `main`)               |
 | checkout       | Byta från en *branch* till en annan, dvs. er *working copy* ändras                                |
-| remote         | Den plats där era ändringar sparas (GitHub i ert fall)                                            |
+| remote         | Den plats där era ändringar sparas (t.ex. GitHub i ert fall)                                      |
 | fetch          | Hämta de senaste ändringarna (*commits*) från er *remote*                                         |
-| pull           | Stoppa in de senaste ändringarna (*commits*) bland era filer                                      |
-| push           | Publicera era *commits* och *merges* till er *remote*                                             |
+| pull           | Detsamma som *fetch* men gör även en *merge* till `main`                                          |
+| push           | Publicera era *commits* (dvs. era ändringar) till er *remote*                                     |
 | pull request   | Skapa ett förslag till en *merge* med en diskussion via GitHub innan den godkänns                 |
-| merge conflict | När en *merge* från en *branch* till en annan har filändringar som kolliderar                     |
-| `.gitignore`   | En fil som innehåller sökvägar till andra filer som **inte** ska publiceras till på er *remote*   |
-| `README.md`    | Det innehåll som visas när någon besöker projektsidan på GitHub. Formateras enligt [Markdown][md] |
-
-## Guide
-
-När ni känner er redo kan ni gå vidare med guiden.
-
-1. [Kom igång](getting-started.md)
-2. [Börja versionshantera](how-to-version-control.md)
-3. [Vanliga situationer](common-situations.md)
+| conflict       | När en *merge* från en *branch* till en annan har filändringar som kolliderar                     |
+| `.gitignore`   | En fil som innehåller sökvägar till andra filer som **inte** ska versionshanteras                 |

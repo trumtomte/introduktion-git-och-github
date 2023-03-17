@@ -1,16 +1,15 @@
-# En introduktion till Git och GitHub
+# En introduktion till Git och GitHub med GitHub Desktop
 
-> En samlingsplats för material om att arbeta med Git, GitHub och GitHub
-> Desktop.
-
-Börja med att läsa igenom [Vad är Git och GitHub?](what-are-git-and-github.md)
-och följ sedan instruktionerna i [Arbeta med GitHub
+För att genomföra workshoppen följer ni instruktionerna i [Arbeta med GitHub
 Desktop](working-with-github-desktop.md).
 
-Här finner ni en bra [serie videos om Git](https://git-scm.com/videos).
+Det rekommenderas starkt att läsa igenom [Git from the inside
+out](https://maryrosecook.com/blog/post/git-from-the-inside-out), den är lång
+men visar vad Git faktiskt gör, rent tekniskt.
 
-Rekommenderad läsning:
+Annars finner ni lite mer referens material nedan:
 
+- [Git Basics](https://git-scm.com/videos).
 - [What is version control](https://www.atlassian.com/git/tutorials/what-is-version-control)
 - [Getting started with GitHub Desktop](https://help.github.com/en/desktop/getting-started-with-github-desktop)
 - [Using Git](https://help.github.com/en/github/using-git)

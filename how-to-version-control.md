@@ -8,14 +8,14 @@ innehåller nämligen sökvägar till alla de filer som ni inte vill ska
 versionshanteras. Det kan vara allt från filer ert operativsystem skapar till de
 filer som er textredigerare konstant redigerar i bakgrunden, t.ex. för era
 inställningar. Ni vill ju bara versionshantera filer som har med er kodbas att
-göra.
+göra (dvs. källkoden).
 
 När ovanstående är på plats ska ni som grupp pröva på att versionshantera. Ni
 kommer alla att skapa varsin *branch*, så att alla arbetar i sin egen version av
 kodbasen. Efter ni gjort lite småändringar (skapa någon fil och sedan redigera
 den) ska ni testa att ändra till någon annan projektmedlems branch för att se
-vad dom gjort. Slutligen kommer ni att *merga* era ändringar till `main` (dvs.
-huvudversionen) och sedan radera era - nu utdaterade - branches.
+vad dom har gjort. Slutligen kommer ni att *merga* era ändringar till `main`
+(dvs. huvudversionen) och sedan radera era - nu utdaterade - branches.
 
 I mina videos använder jag textredigeraren [Visual Studio
 Code](https://code.visualstudio.com/) för att skapa och redigera filer. Ni kan
@@ -39,9 +39,11 @@ GitHub så alla andra i gruppen kan hämta dessa ändringar (*fetch* och *pull*)
 **Innan** ni går vidare till Steg 2 är det **viktigt** att alla i gruppen nu kan
 se att deras `.gitignore` innehåller dessa nya ändringar.
 
+*Är ni osäkra på om er `.gitignore` innehåller vettiga saker så fråga!*
+
 [Skärminspelning: redigera gitignore](assets/V04-update-gitignore.mp4)
 
-## Steg 2: Versionshantera
+## Steg 2: Versionshantera (omgång 1)
 
 ❕Detta görs av **alla** projektmedlemar.
 
@@ -50,24 +52,24 @@ kommer använda er av kontinuerligt under projektet. Kort så innebär det att
 varje gång någon ska programmera något (skapa en ny klass, redigera en funktion,
 osv.) så ska ni börja med att skapa en *branch*, göra era ändringar, sedan
 *commita* dessa och slutligen *merga* er kod till `main`. Detta är i huvudsak en
-rutin ni behöver vänja er vid - och ses som en viktig kompetens att ha i
-industrin.
+rutin ni behöver vänja er vid - som dessutom ses som en viktig kompetens att ha
+i industrin.
 
 Det är **viktigt** att ni nu följer instruktionerna noga (låt bli att trycka på
 den fina blåa knappen i GitHub Desktop om jag inte säger åt er att göra det).
-Varje projektmedlem ska;
+Varje projektmedlem ska:
 
-1. skapa en egen *branch* (valfritt namn, i framtiden bör namnet vara något vettigt)
+1. skapa en egen *branch* (valfritt namn, i framtiden **ska namnet vara något vettigt**)
    - tryck på den fina blåa knappen där det står "Publish branch"
 2. skapa en fil och döp den till `förnamn.txt` (men med ert eget förnamn)
    - gör nu en *commit* med ett meddelande som berättar vad du precis gjorde
-3. lägg till lite text i filen ni precis skapade (räcker med ett ord)
+3. lägg till lite text i filen ni precis skapade (det behöver inte vara något speciellt)
    - gör nu ännu en *commit*
 4. nu kan ni trycka på den fina blåa knappen där det står "Push origin"
 5. **PAUS:** invänta nu så att alla andra har hunnit göra detta
 6. i den övre menyn finner ni knappen "Current Branch", välj nu någon annan
    projektmedlems *branch* och se så att ni kan se deras fil och innehåll
-   (notera att du nu inte ser din egen fil) 
+   (**observera** att du nu inte ser din egen fil) 
 7. välj nu *branch* `main`
    - klicka på samma knapp ("Current Branch") en gång till och längst ner finner
      ni knappen "Choose a branch to merge into **main**", klicka på den och välj
@@ -93,14 +95,14 @@ Varje projektmedlem ska;
    *branch* kan ni givetvis göra en *merge* från `main` till er egen *branch*
    också.
 
-## Steg 3: Avslut
+## Steg 3: Kom igång med er egen källkod
 
 ❕Detta görs av **en** projektmedlem (den med er mest aktuella kodbas).
 
 Nu vill ni säkert påbörja ert riktiga arbete igen. Utse en person som raderar
 alla dessa onödiga filer ni precis skapat. Gör en *commit* av detta och *pusha*
-det till `main`. Sedan ska alla kunna *fetcha* för att se att det faktiskt
-fungerade.
+det till `main`. Sedan ska alla kunna *fetcha* (och *pull*) för att se att det
+faktiskt fungerade.
 
 Nu kan ni kopiera in hela er kodbas i ert repository. **Observera** dock att ni
 inte ska klistra in en mapp, utan mappens innehåll så att ert repository är den
@@ -110,8 +112,26 @@ alla kunna *fetcha* för att se att det faktiskt fungerade.
 **Observera** att ni från och med nu arbetar utifrån er versionshanterade mapp
 (dvs. öppnar den i er textredigerare/IDE).
 
+### Steg 4: Versionshantera (omgång 2)
+
+❕Detta görs av **alla** projektmedlemar.
+
+I detta steg ska ni, i princip, göra samma sak som ni gjorde i Steg 2. Men,
+innan ni börjar göra detta måste ni först bestämma er för vem som ska göra vad.
+Till exempel varsin tom klass, metod, HTML-fil, och så vidare. Det vill säga
+någonting som har relevans för ert projekt.
+
+Detta ska sedan genomföras genom att:
+
+1. skapa en *branch* (med ett vettigt namn)
+2. göra de ändringar som ni planerade och sedan göra en *commit* av detta (med
+ett vettigt meddelande)
+3. göra en *merge* av detta till `main`
+
 ## Färdig
 
 Nu är ni färdiga med alla övningar. Vi har dock skapat en sista del med ett par
-[vanliga situationer inom versionshantering](common-situations.md), mest
-nämnvärt är sk. *Merge conflicts* och hur ni kan lösa dom på egen hand.
+[vanliga situationer inom versionshantering](common-situations.md), som varmt
+rekommenderas att ni läser. Jag skulle personligen rekommendera att ni tillämpar
+"GitHub Flow" i ert projektarbete, det är både en bra övning och något som
+faktiskt används i industrin. 
