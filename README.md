@@ -7,7 +7,7 @@ Det rekommenderas starkt att läsa igenom [Git from the inside
 out](https://maryrosecook.com/blog/post/git-from-the-inside-out), den är lång
 men visar vad Git faktiskt gör, rent tekniskt.
 
-Annars finner ni lite mer referens material nedan:
+Annars finner ni lite mer referensmaterial nedan:
 
 - [Git Basics](https://git-scm.com/videos).
 - [What is version control](https://www.atlassian.com/git/tutorials/what-is-version-control)
