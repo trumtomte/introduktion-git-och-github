@@ -32,9 +32,10 @@ Till exempel kanske ett Java-projekt hade fyllt i "MacOS, Windows, Java,
 JetBrains eller IntelliJ, Maven". Det beror så klart på er grupp. Kopiera nu den
 text som genererades in till er `.gitignore`.
 
-Nu ska ni göra er första *commit*, vilket bara är att kommentera (ett kort
-meddelande) vad ni precis gjort. Därefter ska ni publicera (*push*) detta till
-GitHub så alla andra i gruppen kan hämta dessa ändringar (*fetch* och *pull*).
+Nu ska ni göra er första *commit* (version), vilket innebär är att kommentera (ett
+kort meddelande) vad ni precis gjort (och vad ändringen innebar). Därefter ska ni
+publicera (*push*) detta till GitHub så alla andra i gruppen kan hämta dessa
+ändringar (*fetch* och *pull*).
 
 **Innan** ni går vidare till Steg 2 är det **viktigt** att alla i gruppen nu kan
 se att deras `.gitignore` innehåller dessa nya ändringar.
