@@ -90,8 +90,8 @@ Varje projektmedlem ska:
 
 ### Tips
 
-1. Innan ni skapar en ny *branch*, klicka på "Fetch origin", så att ni har de
-   senaste ändringarna.
+1. Innan ni skapar en ny *branch*, klicka på "Fetch origin" (och sedan *Pull*),
+   så att ni har de senaste ändringarna.
 2. Om det finns nya ändringar i `main` som ni kan dra nytta av i er egen
    *branch* kan ni givetvis göra en *merge* från `main` till er egen *branch*
    också.
@@ -119,8 +119,9 @@ alla kunna *fetcha* för att se att det faktiskt fungerade.
 
 I detta steg ska ni, i princip, göra samma sak som ni gjorde i Steg 2. Men,
 innan ni börjar göra detta måste ni först bestämma er för vem som ska göra vad.
-Till exempel varsin tom klass, metod, HTML-fil, och så vidare. Det vill säga
-någonting som har relevans för ert projekt.
+Till exempel kanske ni skriver varsin tom klass, kanske ni skapar varsin metod
+i en befintlig klass eller skapar några tomma HTML-filer, det är upp till er.
+Men det ska vara någonting som har relevans för ert projekt.
 
 Detta ska sedan genomföras genom att:
 
