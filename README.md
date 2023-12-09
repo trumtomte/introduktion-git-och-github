@@ -5,7 +5,9 @@ Desktop](working-with-github-desktop.md).
 
 Det rekommenderas starkt att läsa igenom [Git from the inside
 out](https://maryrosecook.com/blog/post/git-from-the-inside-out), den är lång
-men visar vad Git faktiskt gör, rent tekniskt.
+men visar vad Git faktiskt gör, rent tekniskt. Även denna, [A Plumber's Guide 
+to Git](https://alexwlchan.net/a-plumbers-guide-to-git/), är väl värd att läsa 
+igenom.
 
 Annars finner ni lite mer referensmaterial nedan:
 
